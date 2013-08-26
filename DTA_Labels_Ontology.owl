@@ -1,0 +1,2558 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY swrl "http://www.w3.org/2003/11/swrl#" >
+    <!ENTITY swrlb "http://www.w3.org/2003/11/swrlb#" >
+    <!ENTITY swrlx "http://www.w3.org/2003/11/swrlx#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY io "http://ilsa.fdi.ucm.es/apareja/OntoLingAnnot/IntegrationOntology#" >
+    <!ENTITY DTALabels "http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#" >
+    <!ENTITY luo "http://ilsa.fdi.ucm.es/apareja/OntoLingAnnot/LinguisticUnitOntology#" >
+    <!ENTITY lvo "http://ilsa.fdi.ucm.es/apareja/OntoLingAnnot/LinguisticValueOntology#" >
+    <!ENTITY DTAMeta "http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Metadata_Ontology#" >
+    <!ENTITY lao "http://ilsa.fdi.ucm.es/apareja/OntoLingAnnot/LinguisticAttributeOntology#" >
+    <!ENTITY Answer-Y "http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#Answer-Y/" >
+]>
+
+
+<rdf:RDF xmlns="http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#"
+     xml:base="http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology"
+     xmlns:lvo="http://ilsa.fdi.ucm.es/apareja/OntoLingAnnot/LinguisticValueOntology#"
+     xmlns:DTAMeta="http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Metadata_Ontology#"
+     xmlns:io="http://ilsa.fdi.ucm.es/apareja/OntoLingAnnot/IntegrationOntology#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:luo="http://ilsa.fdi.ucm.es/apareja/OntoLingAnnot/LinguisticUnitOntology#"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:swrlx="http://www.w3.org/2003/11/swrlx#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:Answer-Y="&DTALabels;Answer-Y/"
+     xmlns:DTALabels="http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:lao="http://ilsa.fdi.ucm.es/apareja/OntoLingAnnot/LinguisticAttributeOntology#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+    <owl:Ontology rdf:about="http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <owl:AnnotationProperty rdf:about="&rdfs;comment"/>
+    <owl:AnnotationProperty rdf:about="&DTALabels;valueExample">
+        <rdfs:subPropertyOf rdf:resource="&rdfs;comment"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#SpeechActDataType -->
+
+    <rdfs:Datatype rdf:about="&DTALabels;SpeechActDataType">
+        <owl:equivalentClass>
+            <rdfs:Datatype>
+                <owl:oneOf>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&rdf;List"/>
+                        <rdf:first>DECL</rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="&rdf;List"/>
+                                <rdf:first>GREET</rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="&rdf;List"/>
+                                        <rdf:first>IMPER</rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="&rdf;List"/>
+                                                <rdf:first>OTHR</rdf:first>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="&rdf;List"/>
+                                                        <rdf:first>POLIT</rdf:first>
+                                                        <rdf:rest>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="&rdf;List"/>
+                                                                <rdf:first>QUEST</rdf:first>
+                                                                <rdf:rest>
+                                                                    <rdf:Description>
+                                                                        <rdf:type rdf:resource="&rdf;List"/>
+                                                                        <rdf:first>SING</rdf:first>
+                                                                        <rdf:rest>
+                                                                            <rdf:Description>
+                                                                                <rdf:type rdf:resource="&rdf;List"/>
+                                                                                <rdf:first>UNCLR</rdf:first>
+                                                                                <rdf:rest rdf:resource="&rdf;nil"/>
+                                                                            </rdf:Description>
+                                                                        </rdf:rest>
+                                                                    </rdf:Description>
+                                                                </rdf:rest>
+                                                            </rdf:Description>
+                                                        </rdf:rest>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </owl:oneOf>
+            </rdfs:Datatype>
+        </owl:equivalentClass>
+    </rdfs:Datatype>
+    
+
+
+    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#SpeechModeDataType -->
+
+    <rdfs:Datatype rdf:about="&DTALabels;SpeechModeDataType">
+        <owl:equivalentClass>
+            <rdfs:Datatype>
+                <owl:oneOf>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&rdf;List"/>
+                        <rdf:first>ANSWER (OLD)</rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="&rdf;List"/>
+                                <rdf:first>ANSWH</rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="&rdf;List"/>
+                                        <rdf:first>ANSYN</rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="&rdf;List"/>
+                                                <rdf:first>COUNT</rdf:first>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="&rdf;List"/>
+                                                        <rdf:first>EXPR</rdf:first>
+                                                        <rdf:rest>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="&rdf;List"/>
+                                                                <rdf:first>NAME</rdf:first>
+                                                                <rdf:rest>
+                                                                    <rdf:Description>
+                                                                        <rdf:type rdf:resource="&rdf;List"/>
+                                                                        <rdf:first>OTHANS</rdf:first>
+                                                                        <rdf:rest>
+                                                                            <rdf:Description>
+                                                                                <rdf:type rdf:resource="&rdf;List"/>
+                                                                                <rdf:first>OTHER</rdf:first>
+                                                                                <rdf:rest>
+                                                                                    <rdf:Description>
+                                                                                        <rdf:type rdf:resource="&rdf;List"/>
+                                                                                        <rdf:first>OTHREP</rdf:first>
+                                                                                        <rdf:rest>
+                                                                                            <rdf:Description>
+                                                                                                <rdf:type rdf:resource="&rdf;List"/>
+                                                                                                <rdf:first>PROMIS</rdf:first>
+                                                                                                <rdf:rest>
+                                                                                                    <rdf:Description>
+                                                                                                        <rdf:type rdf:resource="&rdf;List"/>
+                                                                                                        <rdf:first>REP (OLD)</rdf:first>
+                                                                                                        <rdf:rest>
+                                                                                                            <rdf:Description>
+                                                                                                                <rdf:type rdf:resource="&rdf;List"/>
+                                                                                                                <rdf:first>REQ</rdf:first>
+                                                                                                                <rdf:rest>
+                                                                                                                    <rdf:Description>
+                                                                                                                        <rdf:type rdf:resource="&rdf;List"/>
+                                                                                                                        <rdf:first>RESP (OLD)</rdf:first>
+                                                                                                                        <rdf:rest>
+                                                                                                                            <rdf:Description>
+                                                                                                                                <rdf:type rdf:resource="&rdf;List"/>
+                                                                                                                                <rdf:first>SLFREP</rdf:first>
+                                                                                                                                <rdf:rest>
+                                                                                                                                    <rdf:Description>
+                                                                                                                                        <rdf:type rdf:resource="&rdf;List"/>
+                                                                                                                                        <rdf:first>SPONT</rdf:first>
+                                                                                                                                        <rdf:rest>
+                                                                                                                                            <rdf:Description>
+                                                                                                                                                <rdf:type rdf:resource="&rdf;List"/>
+                                                                                                                                                <rdf:first>UNCLR</rdf:first>
+                                                                                                                                                <rdf:rest>
+                                                                                                                                                    <rdf:Description>
+                                                                                                                                                        <rdf:type rdf:resource="&rdf;List"/>
+                                                                                                                                                        <rdf:first>YNOK</rdf:first>
+                                                                                                                                                        <rdf:rest rdf:resource="&rdf;nil"/>
+                                                                                                                                                    </rdf:Description>
+                                                                                                                                                </rdf:rest>
+                                                                                                                                            </rdf:Description>
+                                                                                                                                        </rdf:rest>
+                                                                                                                                    </rdf:Description>
+                                                                                                                                </rdf:rest>
+                                                                                                                            </rdf:Description>
+                                                                                                                        </rdf:rest>
+                                                                                                                    </rdf:Description>
+                                                                                                                </rdf:rest>
+                                                                                                            </rdf:Description>
+                                                                                                        </rdf:rest>
+                                                                                                    </rdf:Description>
+                                                                                                </rdf:rest>
+                                                                                            </rdf:Description>
+                                                                                        </rdf:rest>
+                                                                                    </rdf:Description>
+                                                                                </rdf:rest>
+                                                                            </rdf:Description>
+                                                                        </rdf:rest>
+                                                                    </rdf:Description>
+                                                                </rdf:rest>
+                                                            </rdf:Description>
+                                                        </rdf:rest>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </owl:oneOf>
+            </rdfs:Datatype>
+        </owl:equivalentClass>
+    </rdfs:Datatype>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#Labels -->
+
+    <owl:ObjectProperty rdf:about="&DTALabels;Labels">
+        <owl:inverseOf rdf:resource="&DTALabels;isLabelledWith"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#hasSyntacticProjection -->
+
+    <owl:ObjectProperty rdf:about="&DTALabels;hasSyntacticProjection">
+        <rdfs:range rdf:resource="&DTALabels;Sentence"/>
+        <rdfs:domain rdf:resource="&DTALabels;UtteranceTranscription"/>
+        <owl:inverseOf rdf:resource="&DTALabels;isSyntacticProjectionOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#hasTranscription -->
+
+    <owl:ObjectProperty rdf:about="&DTALabels;hasTranscription"/>
+    
+
+
+    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#isLabelledWith -->
+
+    <owl:ObjectProperty rdf:about="&DTALabels;isLabelledWith"/>
+    
+
+
+    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#isMappedOnto -->
+
+    <owl:ObjectProperty rdf:about="&DTALabels;isMappedOnto"/>
+    
+
+
+    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#isOK -->
+
+    <owl:ObjectProperty rdf:about="&DTALabels;isOK"/>
+    
+
+
+    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#isSyntacticProjectionOf -->
+
+    <owl:ObjectProperty rdf:about="&DTALabels;isSyntacticProjectionOf">
+        <rdfs:domain rdf:resource="&DTALabels;Sentence"/>
+        <rdfs:range rdf:resource="&DTALabels;UtteranceTranscription"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#isTranscriptionOf -->
+
+    <owl:ObjectProperty rdf:about="&DTALabels;isTranscriptionOf">
+        <owl:inverseOf rdf:resource="&DTALabels;hasTranscription"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#isValueTakenBy -->
+
+    <owl:ObjectProperty rdf:about="&DTALabels;isValueTakenBy">
+        <owl:inverseOf rdf:resource="&DTALabels;takesValue"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#takesValue -->
+
+    <owl:ObjectProperty rdf:about="&DTALabels;takesValue"/>
+    
+
+
+    <!-- http://www.w3.org/1999/02/22-rdf-syntax-ns#Has -->
+
+    <owl:ObjectProperty rdf:about="&rdf;Has"/>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#PartOf -->
+
+    <owl:ObjectProperty rdf:about="&owl;PartOf">
+        <owl:inverseOf rdf:resource="&rdf;Has"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#correspondsToISOCatDataCategory -->
+
+    <owl:DatatypeProperty rdf:about="&DTALabels;correspondsToISOCatDataCategory">
+        <rdfs:domain rdf:resource="&DTALabels;DTALabel"/>
+        <rdfs:range rdf:resource="&xsd;anyURI"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#hasNumberOfMorphemes -->
+
+    <owl:DatatypeProperty rdf:about="&DTALabels;hasNumberOfMorphemes">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:domain rdf:resource="&DTALabels;UtteranceTranscription"/>
+        <rdfs:range rdf:resource="&xsd;nonNegativeInteger"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#hasNumberOfSyllables -->
+
+    <owl:DatatypeProperty rdf:about="&DTALabels;hasNumberOfSyllables">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:domain rdf:resource="&DTALabels;UtteranceTranscription"/>
+        <rdfs:range rdf:resource="&xsd;positiveInteger"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#hasNumberOfWords -->
+
+    <owl:DatatypeProperty rdf:about="&DTALabels;hasNumberOfWords">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:domain rdf:resource="&DTALabels;UtteranceTranscription"/>
+        <rdfs:range rdf:resource="&xsd;nonNegativeInteger"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#hasOvertVerb -->
+
+    <owl:DatatypeProperty rdf:about="&DTALabels;hasOvertVerb">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:label xml:lang="en">&quot;Is the verb overt?&quot;</rdfs:label>
+        <rdfs:domain rdf:resource="&DTALabels;UtteranceTranscription"/>
+        <rdfs:range rdf:resource="&xsd;boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#isFragment -->
+
+    <owl:DatatypeProperty rdf:about="&DTALabels;isFragment">
+        <rdfs:domain rdf:resource="&DTALabels;UtteranceTranscription"/>
+        <rdfs:range rdf:resource="&xsd;boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#isSentence -->
+
+    <owl:DatatypeProperty rdf:about="&DTALabels;isSentence">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:domain rdf:resource="&DTALabels;UtteranceTranscription"/>
+        <rdfs:range rdf:resource="&xsd;boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#isWhQuestion -->
+
+    <owl:DatatypeProperty rdf:about="&DTALabels;isWhQuestion">
+        <rdfs:domain rdf:resource="&luo;Utterance"/>
+        <rdfs:range rdf:resource="&xsd;boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#isYesOrNoQuestion -->
+
+    <owl:DatatypeProperty rdf:about="&DTALabels;isYesOrNoQuestion">
+        <rdfs:domain rdf:resource="&luo;Utterance"/>
+        <rdfs:range rdf:resource="&xsd;boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://ilsa.fdi.ucm.es/apareja/OntoLingAnnot/IntegrationOntology#LinguisticAnnotation -->
+
+    <owl:Class rdf:about="&io;LinguisticAnnotation">
+        <rdfs:subClassOf rdf:resource="&io;LinguisticObject"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ilsa.fdi.ucm.es/apareja/OntoLingAnnot/IntegrationOntology#LinguisticObject -->
+
+    <owl:Class rdf:about="&io;LinguisticObject">
+        <rdfs:subClassOf rdf:resource="&DTALabels;Object"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ilsa.fdi.ucm.es/apareja/OntoLingAnnot/IntegrationOntology#LinguisticTriple -->
+
+    <owl:Class rdf:about="&io;LinguisticTriple">
+        <rdfs:subClassOf rdf:resource="&io;LinguisticObject"/>
+        <rdfs:subClassOf rdf:resource="&io;Triple"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ilsa.fdi.ucm.es/apareja/OntoLingAnnot/IntegrationOntology#OntoLingAnnotAnnotation -->
+
+    <owl:Class rdf:about="&io;OntoLingAnnotAnnotation">
+        <owl:equivalentClass rdf:resource="&io;OntoLingAnnotTriple"/>
+        <rdfs:subClassOf rdf:resource="&io;LinguisticAnnotation"/>
+        <rdfs:subClassOf rdf:resource="&io;LinguisticTriple"/>
+        <rdfs:subClassOf rdf:resource="&io;RDFTriple"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ilsa.fdi.ucm.es/apareja/OntoLingAnnot/IntegrationOntology#OntoLingAnnotTriple -->
+
+    <owl:Class rdf:about="&io;OntoLingAnnotTriple">
+        <rdfs:subClassOf rdf:resource="&io;LinguisticAnnotation"/>
+        <rdfs:subClassOf rdf:resource="&io;LinguisticTriple"/>
+        <rdfs:subClassOf rdf:resource="&io;RDFTriple"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ilsa.fdi.ucm.es/apareja/OntoLingAnnot/IntegrationOntology#RDFObject -->
+
+    <owl:Class rdf:about="&io;RDFObject">
+        <rdfs:subClassOf rdf:resource="&DTALabels;Object"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ilsa.fdi.ucm.es/apareja/OntoLingAnnot/IntegrationOntology#RDFTriple -->
+
+    <owl:Class rdf:about="&io;RDFTriple">
+        <rdfs:subClassOf rdf:resource="&io;RDFObject"/>
+        <rdfs:subClassOf rdf:resource="&io;Triple"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ilsa.fdi.ucm.es/apareja/OntoLingAnnot/IntegrationOntology#TextAnnotationTriple -->
+
+    <owl:Class rdf:about="&io;TextAnnotationTriple">
+        <rdfs:subClassOf rdf:resource="&io;OntoLingAnnotTriple"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ilsa.fdi.ucm.es/apareja/OntoLingAnnot/IntegrationOntology#Triple -->
+
+    <owl:Class rdf:about="&io;Triple">
+        <rdfs:subClassOf rdf:resource="&DTALabels;Collection"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ilsa.fdi.ucm.es/apareja/OntoLingAnnot/IntegrationOntology#TripleAnnotationTriple -->
+
+    <owl:Class rdf:about="&io;TripleAnnotationTriple">
+        <rdfs:subClassOf rdf:resource="&io;OntoLingAnnotTriple"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ilsa.fdi.ucm.es/apareja/OntoLingAnnot/IntegrationOntology#UAVTriple -->
+
+    <owl:Class rdf:about="&io;UAVTriple">
+        <rdfs:subClassOf rdf:resource="&io;OntoLingAnnotTriple"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ilsa.fdi.ucm.es/apareja/OntoLingAnnot/LinguisticAttributeOntology#LinguisticAttribute -->
+
+    <owl:Class rdf:about="&lao;LinguisticAttribute">
+        <owl:equivalentClass rdf:resource="&lao;LinguisticFeature"/>
+        <rdfs:subClassOf rdf:resource="&io;LinguisticObject"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ilsa.fdi.ucm.es/apareja/OntoLingAnnot/LinguisticAttributeOntology#LinguisticFeature -->
+
+    <owl:Class rdf:about="&lao;LinguisticFeature">
+        <rdfs:subClassOf rdf:resource="&io;LinguisticObject"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ilsa.fdi.ucm.es/apareja/OntoLingAnnot/LinguisticUnitOntology#Assertive -->
+
+    <owl:Class rdf:about="&luo;Assertive">
+        <rdfs:subClassOf rdf:resource="&luo;SpeechAct"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&DTALabels;isLabelledWith"/>
+                <owl:someValuesFrom rdf:resource="&DTALabels;AssertiveLabel"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:seeAlso rdf:datatype="&xsd;anyURI">http://en.wikipedia.org/wiki/Speech_act</rdfs:seeAlso>
+        <rdfs:isDefinedBy xml:lang="en">&quot;A Speech Act that commits a speaker to the truth of the expressed proposition, e.g. reciting a creed.&quot;</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://ilsa.fdi.ucm.es/apareja/OntoLingAnnot/LinguisticUnitOntology#Clause -->
+
+    <owl:Class rdf:about="&luo;Clause">
+        <rdfs:subClassOf rdf:resource="&luo;SyntacticUnit"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ilsa.fdi.ucm.es/apareja/OntoLingAnnot/LinguisticUnitOntology#Commissive -->
+
+    <owl:Class rdf:about="&luo;Commissive">
+        <rdfs:subClassOf rdf:resource="&luo;SpeechAct"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&DTALabels;isLabelledWith"/>
+                <owl:someValuesFrom rdf:resource="&DTALabels;CommissiveLabel"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:seeAlso rdf:datatype="&xsd;anyURI">http://en.wikipedia.org/wiki/Speech_act</rdfs:seeAlso>
+        <rdfs:isDefinedBy xml:lang="en">&quot;A Speech Act that commits a speaker to some future action, e.g. promises and oaths&quot;</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://ilsa.fdi.ucm.es/apareja/OntoLingAnnot/LinguisticUnitOntology#ComplexSentence -->
+
+    <owl:Class rdf:about="&luo;ComplexSentence">
+        <rdfs:subClassOf rdf:resource="&DTALabels;ComplexSentence"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ilsa.fdi.ucm.es/apareja/OntoLingAnnot/LinguisticUnitOntology#CompoundSentence -->
+
+    <owl:Class rdf:about="&luo;CompoundSentence">
+        <owl:equivalentClass rdf:resource="&DTALabels;CoordinateSentence"/>
+        <rdfs:subClassOf rdf:resource="&DTALabels;ComplexSentence"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ilsa.fdi.ucm.es/apareja/OntoLingAnnot/LinguisticUnitOntology#Declarative -->
+
+    <owl:Class rdf:about="&luo;Declarative">
+        <owl:equivalentClass rdf:resource="&DTALabels;Declaration"/>
+        <rdfs:subClassOf rdf:resource="&luo;SpeechAct"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ilsa.fdi.ucm.es/apareja/OntoLingAnnot/LinguisticUnitOntology#Directive -->
+
+    <owl:Class rdf:about="&luo;Directive">
+        <rdfs:subClassOf rdf:resource="&luo;SpeechAct"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&DTALabels;isLabelledWith"/>
+                <owl:someValuesFrom rdf:resource="&DTALabels;DirectiveLabel"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:seeAlso rdf:datatype="&xsd;anyURI">http://en.wikipedia.org/wiki/Speech_act</rdfs:seeAlso>
+        <rdfs:isDefinedBy xml:lang="en">&quot;A Speech Act that is to cause the hearer to take a particular action, e.g. requests, commands and advice.&quot;</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://ilsa.fdi.ucm.es/apareja/OntoLingAnnot/LinguisticUnitOntology#DiscourseUnit -->
+
+    <owl:Class rdf:about="&luo;DiscourseUnit">
+        <rdfs:subClassOf rdf:resource="&luo;LinguisticUnit"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ilsa.fdi.ucm.es/apareja/OntoLingAnnot/LinguisticUnitOntology#Expressive -->
+
+    <owl:Class rdf:about="&luo;Expressive">
+        <rdfs:subClassOf rdf:resource="&luo;SpeechAct"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&DTALabels;isLabelledWith"/>
+                <owl:someValuesFrom rdf:resource="&DTALabels;ExpressiveLabel"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:seeAlso rdf:datatype="&xsd;anyURI">http://en.wikipedia.org/wiki/Speech_act</rdfs:seeAlso>
+        <rdfs:isDefinedBy xml:lang="en">&quot;A Speech Act that expresses the speaker&#39;s attitudes and emotions towards the proposition, e.g. congratulations, excuses and thanks&quot;</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://ilsa.fdi.ucm.es/apareja/OntoLingAnnot/LinguisticUnitOntology#LinguisticUnit -->
+
+    <owl:Class rdf:about="&luo;LinguisticUnit">
+        <rdfs:subClassOf rdf:resource="&io;LinguisticObject"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ilsa.fdi.ucm.es/apareja/OntoLingAnnot/LinguisticUnitOntology#Morpheme -->
+
+    <owl:Class rdf:about="&luo;Morpheme">
+        <rdfs:subClassOf rdf:resource="&luo;MorphologicalUnit"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&owl;PartOf"/>
+                <owl:someValuesFrom rdf:resource="&DTALabels;MorphologicalCoding"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&owl;PartOf"/>
+                <owl:someValuesFrom rdf:resource="&luo;Word"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:isDefinedBy rdf:datatype="&xsd;anyURI">http://en.wikipedia.org/wiki/Morpheme</rdfs:isDefinedBy>
+        <rdfs:seeAlso rdf:datatype="&xsd;anyURI">http://www-01.sil.org/linguistics/GlossaryOfLinguisticTerms/WhatIsAMorpheme.htm</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://ilsa.fdi.ucm.es/apareja/OntoLingAnnot/LinguisticUnitOntology#MorphologicalUnit -->
+
+    <owl:Class rdf:about="&luo;MorphologicalUnit">
+        <rdfs:subClassOf rdf:resource="&DTALabels;MorphoSyntacticUnit"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ilsa.fdi.ucm.es/apareja/OntoLingAnnot/LinguisticUnitOntology#Phoneme -->
+
+    <owl:Class rdf:about="&luo;Phoneme">
+        <rdfs:subClassOf rdf:resource="&luo;PhonologicalUnit"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&DTALabels;hasTranscription"/>
+                <owl:someValuesFrom rdf:resource="&DTALabels;PhonemeTranscription"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:isDefinedBy rdf:datatype="&xsd;anyURI">http://en.wikipedia.org/wiki/Phoneme</rdfs:isDefinedBy>
+        <rdfs:seeAlso rdf:datatype="&xsd;anyURI">http://en.wikipedia.org/wiki/Phonological_hierarchy</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://ilsa.fdi.ucm.es/apareja/OntoLingAnnot/LinguisticUnitOntology#PhonologicalUnit -->
+
+    <owl:Class rdf:about="&luo;PhonologicalUnit">
+        <owl:equivalentClass rdf:resource="&luo;SpeechUnit"/>
+        <rdfs:subClassOf rdf:resource="&luo;LinguisticUnit"/>
+        <rdfs:isDefinedBy rdf:datatype="&xsd;anyURI">http://en.wikipedia.org/wiki/Phonological_hierarchy</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://ilsa.fdi.ucm.es/apareja/OntoLingAnnot/LinguisticUnitOntology#Phrase -->
+
+    <owl:Class rdf:about="&luo;Phrase">
+        <rdfs:subClassOf rdf:resource="&luo;SyntacticUnit"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ilsa.fdi.ucm.es/apareja/OntoLingAnnot/LinguisticUnitOntology#PragmaticUnit -->
+
+    <owl:Class rdf:about="&luo;PragmaticUnit">
+        <rdfs:subClassOf rdf:resource="&luo;LinguisticUnit"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ilsa.fdi.ucm.es/apareja/OntoLingAnnot/LinguisticUnitOntology#Pronoun -->
+
+    <owl:Class rdf:about="&luo;Pronoun">
+        <rdfs:subClassOf rdf:resource="&luo;Word"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ilsa.fdi.ucm.es/apareja/OntoLingAnnot/LinguisticUnitOntology#ProsodicDeclinationUnit -->
+
+    <owl:Class rdf:about="&luo;ProsodicDeclinationUnit">
+        <rdfs:subClassOf rdf:resource="&luo;ProsodicUnit"/>
+        <rdfs:seeAlso rdf:datatype="&xsd;anyURI">http://en.wikipedia.org/wiki/Phonological_hierarchy</rdfs:seeAlso>
+        <rdfs:seeAlso rdf:datatype="&xsd;anyURI">http://en.wikipedia.org/wiki/Prosodic_unit</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://ilsa.fdi.ucm.es/apareja/OntoLingAnnot/LinguisticUnitOntology#ProsodicIntonationUnit -->
+
+    <owl:Class rdf:about="&luo;ProsodicIntonationUnit">
+        <rdfs:subClassOf rdf:resource="&luo;ProsodicUnit"/>
+        <rdfs:seeAlso rdf:datatype="&xsd;anyURI">http://en.wikipedia.org/wiki/Phonological_hierarchy</rdfs:seeAlso>
+        <rdfs:seeAlso rdf:datatype="&xsd;anyURI">http://en.wikipedia.org/wiki/Prosodic_unit</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://ilsa.fdi.ucm.es/apareja/OntoLingAnnot/LinguisticUnitOntology#ProsodicUnit -->
+
+    <owl:Class rdf:about="&luo;ProsodicUnit">
+        <rdfs:subClassOf rdf:resource="&luo;PhonologicalUnit"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&rdf;Has"/>
+                <owl:someValuesFrom rdf:resource="&luo;Syllable"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:seeAlso rdf:datatype="&xsd;anyURI">http://en.wikipedia.org/wiki/Phonological_hierarchy</rdfs:seeAlso>
+        <rdfs:isDefinedBy rdf:datatype="&xsd;anyURI">http://en.wikipedia.org/wiki/Prosodic_unit</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://ilsa.fdi.ucm.es/apareja/OntoLingAnnot/LinguisticUnitOntology#SemanticUnit -->
+
+    <owl:Class rdf:about="&luo;SemanticUnit">
+        <rdfs:subClassOf rdf:resource="&luo;LinguisticUnit"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ilsa.fdi.ucm.es/apareja/OntoLingAnnot/LinguisticUnitOntology#SimpleSentence -->
+
+    <owl:Class rdf:about="&luo;SimpleSentence">
+        <rdfs:subClassOf rdf:resource="&DTALabels;Sentence"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ilsa.fdi.ucm.es/apareja/OntoLingAnnot/LinguisticUnitOntology#SpeechAct -->
+
+    <owl:Class rdf:about="&luo;SpeechAct">
+        <rdfs:subClassOf rdf:resource="&luo;PragmaticUnit"/>
+        <rdfs:subClassOf rdf:resource="&luo;SpeechUnit"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&DTALabels;isLabelledWith"/>
+                <owl:someValuesFrom rdf:resource="&DTALabels;SpeechActLabel"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://ilsa.fdi.ucm.es/apareja/OntoLingAnnot/LinguisticUnitOntology#SpeechUnit -->
+
+    <owl:Class rdf:about="&luo;SpeechUnit">
+        <rdfs:subClassOf rdf:resource="&luo;LinguisticUnit"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ilsa.fdi.ucm.es/apareja/OntoLingAnnot/LinguisticUnitOntology#Syllable -->
+
+    <owl:Class rdf:about="&luo;Syllable">
+        <rdfs:subClassOf rdf:resource="&luo;PhonologicalUnit"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&rdf;Has"/>
+                <owl:someValuesFrom rdf:resource="&luo;Phoneme"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:seeAlso rdf:datatype="&xsd;anyURI">http://en.wikipedia.org/wiki/Phonological_hierarchy</rdfs:seeAlso>
+        <rdfs:isDefinedBy rdf:datatype="&xsd;anyURI">http://en.wikipedia.org/wiki/Syllable</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://ilsa.fdi.ucm.es/apareja/OntoLingAnnot/LinguisticUnitOntology#SyntacticUnit -->
+
+    <owl:Class rdf:about="&luo;SyntacticUnit">
+        <rdfs:subClassOf rdf:resource="&DTALabels;MorphoSyntacticUnit"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ilsa.fdi.ucm.es/apareja/OntoLingAnnot/LinguisticUnitOntology#Text -->
+
+    <owl:Class rdf:about="&luo;Text">
+        <rdfs:subClassOf rdf:resource="&luo;TextUnit"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&owl;PartOf"/>
+                <owl:someValuesFrom rdf:resource="&DTALabels;PhoneticTranscription"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://ilsa.fdi.ucm.es/apareja/OntoLingAnnot/LinguisticUnitOntology#TextUnit -->
+
+    <owl:Class rdf:about="&luo;TextUnit">
+        <rdfs:subClassOf rdf:resource="&luo;LinguisticUnit"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ilsa.fdi.ucm.es/apareja/OntoLingAnnot/LinguisticUnitOntology#Utterance -->
+
+    <owl:Class rdf:about="&luo;Utterance">
+        <rdfs:subClassOf rdf:resource="&luo;PhonologicalUnit"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&rdf;Has"/>
+                <owl:allValuesFrom rdf:resource="&luo;ProsodicUnit"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&DTALabels;hasSyntacticProjection"/>
+                <owl:someValuesFrom rdf:resource="&luo;SyntacticUnit"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&DTALabels;hasTranscription"/>
+                <owl:someValuesFrom rdf:resource="&DTALabels;UtteranceTranscription"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&DTALabels;isOK"/>
+                <owl:someValuesFrom rdf:resource="&DTALabels;UtteranceOKValue"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:seeAlso rdf:datatype="&xsd;anyURI">http://en.wikipedia.org/wiki/Phonological_hierarchy</rdfs:seeAlso>
+        <rdfs:isDefinedBy rdf:datatype="&xsd;anyURI">http://en.wikipedia.org/wiki/Utterance</rdfs:isDefinedBy>
+        <rdfs:seeAlso rdf:datatype="&xsd;anyURI">http://www-01.sil.org/linguistics/GlossaryOfLinguisticTerms/WhatIsAnUtterance.htm</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://ilsa.fdi.ucm.es/apareja/OntoLingAnnot/LinguisticUnitOntology#Word -->
+
+    <owl:Class rdf:about="&luo;Word">
+        <rdfs:subClassOf rdf:resource="&DTALabels;MorphoSyntacticUnit"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&rdf;Has"/>
+                <owl:someValuesFrom rdf:resource="&luo;Morpheme"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:isDefinedBy xml:lang="en">&quot;ISO 24611 (MAF):word-form&quot;</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://ilsa.fdi.ucm.es/apareja/OntoLingAnnot/LinguisticValueOntology#LinguisticValue -->
+
+    <owl:Class rdf:about="&lvo;LinguisticValue">
+        <rdfs:subClassOf rdf:resource="&io;LinguisticObject"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#AdjectivalPhrase -->
+
+    <owl:Class rdf:about="&DTALabels;AdjectivalPhrase">
+        <rdfs:subClassOf rdf:resource="&luo;Phrase"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#AdverbialPhrase -->
+
+    <owl:Class rdf:about="&DTALabels;AdverbialPhrase">
+        <rdfs:subClassOf rdf:resource="&luo;Phrase"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#AnswerSpeechModeTypeLabel -->
+
+    <owl:Class rdf:about="&DTALabels;AnswerSpeechModeTypeLabel">
+        <rdfs:subClassOf rdf:resource="&DTALabels;SpeechModeTypeLabel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#AssertiveLabel -->
+
+    <owl:Class rdf:about="&DTALabels;AssertiveLabel">
+        <rdfs:subClassOf rdf:resource="&DTALabels;SpeechActTypeLabel"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&DTALabels;Labels"/>
+                <owl:someValuesFrom rdf:resource="&luo;Assertive"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#BasicLinguisticLabel -->
+
+    <owl:Class rdf:about="&DTALabels;BasicLinguisticLabel">
+        <rdfs:subClassOf rdf:resource="&DTALabels;GlobalCoding"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#BreakoffSymbol -->
+
+    <owl:Class rdf:about="&DTALabels;BreakoffSymbol">
+        <rdfs:label>&quot;&gt;&quot;</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&DTALabels;ProsodicSymbol"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#Collection -->
+
+    <owl:Class rdf:about="&DTALabels;Collection">
+        <rdfs:subClassOf rdf:resource="&DTALabels;Object"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#CommissiveLabel -->
+
+    <owl:Class rdf:about="&DTALabels;CommissiveLabel">
+        <rdfs:subClassOf rdf:resource="&DTALabels;SpeechActTypeLabel"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&DTALabels;Labels"/>
+                <owl:someValuesFrom rdf:resource="&luo;Commissive"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#ComplexSentence -->
+
+    <owl:Class rdf:about="&DTALabels;ComplexSentence">
+        <rdfs:subClassOf rdf:resource="&DTALabels;Sentence"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#Context -->
+
+    <owl:Class rdf:about="&DTALabels;Context">
+        <rdfs:subClassOf rdf:resource="&DTALabels;UtteranceTranscriptionLabel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#CoordinateSentence -->
+
+    <owl:Class rdf:about="&DTALabels;CoordinateSentence">
+        <rdfs:subClassOf rdf:resource="&DTALabels;Sentence"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#DTAAnnotation -->
+
+    <owl:Class rdf:about="&DTALabels;DTAAnnotation">
+        <rdfs:subClassOf rdf:resource="&io;LinguisticAnnotation"/>
+        <rdfs:subClassOf rdf:resource="&DTALabels;DTAObject"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&DTALabels;isMappedOnto"/>
+                <owl:someValuesFrom rdf:resource="&io;OntoLingAnnotAnnotation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#DTAGloss -->
+
+    <owl:Class rdf:about="&DTALabels;DTAGloss">
+        <rdfs:subClassOf rdf:resource="&DTALabels;DTAAnnotation"/>
+        <rdfs:subClassOf rdf:resource="&DTALabels;Gloss"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&rdf;Has"/>
+                <owl:someValuesFrom rdf:resource="&DTALabels;DTAGlossLabel"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#DTAGlossLabel -->
+
+    <owl:Class rdf:about="&DTALabels;DTAGlossLabel">
+        <rdfs:subClassOf rdf:resource="&DTALabels;UtteranceTranscriptionLabel"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&owl;PartOf"/>
+                <owl:someValuesFrom rdf:resource="&DTALabels;DTAGloss"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#DTALabel -->
+
+    <owl:Class rdf:about="&DTALabels;DTALabel">
+        <owl:equivalentClass rdf:resource="&DTAMeta;Coding"/>
+        <rdfs:subClassOf rdf:resource="&lao;LinguisticFeature"/>
+        <rdfs:subClassOf rdf:resource="&DTALabels;DTAObject"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#DTAObject -->
+
+    <owl:Class rdf:about="&DTALabels;DTAObject">
+        <rdfs:subClassOf rdf:resource="&DTALabels;Object"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#DTAPair -->
+
+    <owl:Class rdf:about="&DTALabels;DTAPair">
+        <rdfs:subClassOf rdf:resource="&DTALabels;Pair"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#DTAValue -->
+
+    <owl:Class rdf:about="&DTALabels;DTAValue">
+        <rdfs:subClassOf rdf:resource="&lvo;LinguisticValue"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&DTALabels;isValueTakenBy"/>
+                <owl:someValuesFrom rdf:resource="&DTALabels;DTALabel"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#Declaration -->
+
+    <owl:Class rdf:about="&DTALabels;Declaration">
+        <rdfs:subClassOf rdf:resource="&luo;SpeechAct"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&DTALabels;isLabelledWith"/>
+                <owl:someValuesFrom rdf:resource="&DTALabels;DeclarationLabel"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:seeAlso rdf:datatype="&xsd;anyURI">http://en.wikipedia.org/wiki/Speech_act</rdfs:seeAlso>
+        <rdfs:isDefinedBy xml:lang="en">&quot;A Speech Act that changes the reality in accord with the proposition of the declaration, e.g. baptisms, pronouncing someone guilty or pronouncing someone husband and wife.&quot;</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#DeclarationLabel -->
+
+    <owl:Class rdf:about="&DTALabels;DeclarationLabel">
+        <rdfs:subClassOf rdf:resource="&DTALabels;SpeechActTypeLabel"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&DTALabels;Labels"/>
+                <owl:someValuesFrom rdf:resource="&DTALabels;Declaration"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#DeterminerPhrase -->
+
+    <owl:Class rdf:about="&DTALabels;DeterminerPhrase">
+        <rdfs:subClassOf rdf:resource="&luo;Phrase"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#DirectiveLabel -->
+
+    <owl:Class rdf:about="&DTALabels;DirectiveLabel">
+        <rdfs:subClassOf rdf:resource="&DTALabels;SpeechActTypeLabel"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&DTALabels;Labels"/>
+                <owl:someValuesFrom rdf:resource="&luo;Directive"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#EndExclamationSymbol -->
+
+    <owl:Class rdf:about="&DTALabels;EndExclamationSymbol">
+        <rdfs:label>&quot;!&quot;</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&DTALabels;ExclamationSymbol"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#EndOfStatementSymbol -->
+
+    <owl:Class rdf:about="&DTALabels;EndOfStatementSymbol">
+        <rdfs:label>&quot;.&quot;</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&DTALabels;ProsodicSymbol"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#EndQuestionSymbol -->
+
+    <owl:Class rdf:about="&DTALabels;EndQuestionSymbol">
+        <rdfs:label>&quot;?&quot;</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&DTALabels;QuestionSymbol"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#EndSimultaneousUtteranceSymbol -->
+
+    <owl:Class rdf:about="&DTALabels;EndSimultaneousUtteranceSymbol">
+        <rdfs:label>&quot;}&quot;</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&DTALabels;SimultaneousUtteranceSymbol"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#ExclamationSymbol -->
+
+    <owl:Class rdf:about="&DTALabels;ExclamationSymbol">
+        <rdfs:subClassOf rdf:resource="&DTALabels;ProsodicSymbol"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#ExpressiveLabel -->
+
+    <owl:Class rdf:about="&DTALabels;ExpressiveLabel">
+        <rdfs:subClassOf rdf:resource="&DTALabels;SpeechActTypeLabel"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&DTALabels;Labels"/>
+                <owl:someValuesFrom rdf:resource="&luo;Expressive"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#Fragment -->
+
+    <owl:Class rdf:about="&DTALabels;Fragment">
+        <rdfs:subClassOf rdf:resource="&luo;SyntacticUnit"/>
+        <rdfs:isDefinedBy xml:lang="en">&quot;A Fragment is any form of interrupted Sentence&quot;</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#GeneralContext -->
+
+    <owl:Class rdf:about="&DTALabels;GeneralContext">
+        <rdfs:label xml:lang="en">&quot;General context&quot;</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&DTALabels;Context"/>
+        <rdfs:isDefinedBy xml:lang="en">&quot;A description of the location, placement and/or properties of the Session. It may change during one Session&quot;</rdfs:isDefinedBy>
+        <valueExample xml:lang="en">&quot;At the beginning of the session, the researcher and the participant are sitting on the floor and playing with cars.&quot;</valueExample>
+        <valueExample xml:lang="en">&quot;The mother of the Subject comes in.&quot;</valueExample>
+        <valueExample xml:lang="en">&quot;The researcher and the participants go and sit on the bed.&quot;</valueExample>
+    </owl:Class>
+    
+
+
+    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#GeneralGlossLabel -->
+
+    <owl:Class rdf:about="&DTALabels;GeneralGlossLabel">
+        <rdfs:label xml:lang="en">&quot;General gloss&quot;</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&DTALabels;DTAGlossLabel"/>
+        <valueExample xml:lang="en">&quot;The GeneralGloss for the Spanish Utterance &#39;A ella le gustan los camiones&#39; would be &#39;She likes birds&#39;.&quot;</valueExample>
+    </owl:Class>
+    
+
+
+    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#GlobalCoding -->
+
+    <owl:Class rdf:about="&DTALabels;GlobalCoding">
+        <rdfs:subClassOf rdf:resource="&DTALabels;DTALabel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#Gloss -->
+
+    <owl:Class rdf:about="&DTALabels;Gloss">
+        <rdfs:subClassOf rdf:resource="&io;LinguisticAnnotation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#HesitationPause -->
+
+    <owl:Class rdf:about="&DTALabels;HesitationPause">
+        <rdfs:subClassOf rdf:resource="&DTALabels;PauseSymbol"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#InterruptionSymbol -->
+
+    <owl:Class rdf:about="&DTALabels;InterruptionSymbol">
+        <rdfs:label>&quot;^&quot;</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&DTALabels;ProsodicSymbol"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#MigratedProjectCoding -->
+
+    <owl:Class rdf:about="&DTALabels;MigratedProjectCoding">
+        <rdfs:subClassOf rdf:resource="&DTALabels;ProjectSpecificCoding"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#MorphoSyntacticUnit -->
+
+    <owl:Class rdf:about="&DTALabels;MorphoSyntacticUnit">
+        <rdfs:subClassOf rdf:resource="&luo;LinguisticUnit"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#MorphologicalCoding -->
+
+    <owl:Class rdf:about="&DTALabels;MorphologicalCoding">
+        <rdfs:label xml:lang="en">&quot;Morphological coding&quot;</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&DTALabels;UtteranceTranscriptionLabel"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&DTALabels;Labels"/>
+                <owl:someValuesFrom rdf:resource="&DTAMeta;Transcription"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&rdf;Has"/>
+                <owl:someValuesFrom rdf:resource="&luo;Morpheme"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <valueExample xml:lang="en">&quot;The MorphologicalCoding for &#39;She wants more trucks&#39; could be one of the following:
+1.- &#39;she want-s more truck-s&#39;
+2.- &#39;she want-3SG more truck-PL&#39;.&quot;</valueExample>
+        <rdfs:isDefinedBy xml:lang="en">&quot;This DTA label is attached to a division of an UtteranceTranscripton into its Morphemes.&quot;</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#NoTranscriptionProvidedSymbol -->
+
+    <owl:Class rdf:about="&DTALabels;NoTranscriptionProvidedSymbol">
+        <rdfs:label>&quot;ww&quot;</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&DTALabels;PhoneticTranscriptionWildcard"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#NounPhrase -->
+
+    <owl:Class rdf:about="&DTALabels;NounPhrase">
+        <rdfs:label>&quot;NP&quot;</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&luo;Phrase"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#Object -->
+
+    <owl:Class rdf:about="&DTALabels;Object">
+        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#Pair -->
+
+    <owl:Class rdf:about="&DTALabels;Pair">
+        <rdfs:subClassOf rdf:resource="&DTALabels;Collection"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#PauseSymbol -->
+
+    <owl:Class rdf:about="&DTALabels;PauseSymbol">
+        <rdfs:label>&quot;...&quot;</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&DTALabels;ProsodicSymbol"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#PhonemeTranscription -->
+
+    <owl:Class rdf:about="&DTALabels;PhonemeTranscription">
+        <rdfs:subClassOf rdf:resource="&DTALabels;PhoneticTranscriptionSymbol"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&DTALabels;isTranscriptionOf"/>
+                <owl:someValuesFrom rdf:resource="&luo;Phoneme"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#PhoneticTranscription -->
+
+    <owl:Class rdf:about="&DTALabels;PhoneticTranscription">
+        <rdfs:subClassOf rdf:resource="&DTAMeta;Transcription"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&rdf;Has"/>
+                <owl:someValuesFrom rdf:resource="&DTALabels;PhoneticTranscriptionSymbol"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&rdf;Has"/>
+                <owl:someValuesFrom rdf:resource="&luo;Text"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#PhoneticTranscriptionLabel -->
+
+    <owl:Class rdf:about="&DTALabels;PhoneticTranscriptionLabel">
+        <rdfs:label xml:lang="en">&quot;Phonetic transcription&quot;</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&DTALabels;UtteranceTranscriptionLabel"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&DTALabels;Labels"/>
+                <owl:someValuesFrom rdf:resource="&DTALabels;UtterancePhoneticTranscription"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <valueExample xml:lang="en">&quot;The PhoneticTranscription for the Spanish Utterance &#39;Ella quiere más camiones&#39; (&#39;She wants more trucks&#39;) would be &#39;[&#39;eya &#39;kjere &#39;mas ka&#39;mjones]&#39;.&quot;</valueExample>
+    </owl:Class>
+    
+
+
+    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#PhoneticTranscriptionSymbol -->
+
+    <owl:Class rdf:about="&DTALabels;PhoneticTranscriptionSymbol">
+        <rdfs:subClassOf rdf:resource="&DTAMeta;Transcription"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&owl;PartOf"/>
+                <owl:someValuesFrom rdf:resource="&DTALabels;PhoneticTranscription"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#PhoneticTranscriptionWildcard -->
+
+    <owl:Class rdf:about="&DTALabels;PhoneticTranscriptionWildcard">
+        <rdfs:subClassOf rdf:resource="&DTALabels;PhoneticTranscriptionSymbol"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#PrepositionalPhrase -->
+
+    <owl:Class rdf:about="&DTALabels;PrepositionalPhrase">
+        <rdfs:subClassOf rdf:resource="&luo;Phrase"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#ProjectSpecificCoding -->
+
+    <owl:Class rdf:about="&DTALabels;ProjectSpecificCoding">
+        <rdfs:subClassOf rdf:resource="&DTALabels;DTALabel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#ProsodicSymbol -->
+
+    <owl:Class rdf:about="&DTALabels;ProsodicSymbol">
+        <rdfs:subClassOf rdf:resource="&DTALabels;PhoneticTranscriptionSymbol"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#QuestionSymbol -->
+
+    <owl:Class rdf:about="&DTALabels;QuestionSymbol">
+        <rdfs:subClassOf rdf:resource="&DTALabels;ProsodicSymbol"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#RelativePronoun -->
+
+    <owl:Class rdf:about="&DTALabels;RelativePronoun">
+        <rdfs:subClassOf rdf:resource="&luo;Pronoun"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#RepetitionSpeechModeTypeLabel -->
+
+    <owl:Class rdf:about="&DTALabels;RepetitionSpeechModeTypeLabel">
+        <rdfs:label xml:lang="en">&quot;Other repetition&quot;</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&DTALabels;SpeechModeTypeLabel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#Sentence -->
+
+    <owl:Class rdf:about="&DTALabels;Sentence">
+        <rdfs:subClassOf rdf:resource="&luo;SyntacticUnit"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#SimultaneousUtteranceSymbol -->
+
+    <owl:Class rdf:about="&DTALabels;SimultaneousUtteranceSymbol">
+        <rdfs:subClassOf rdf:resource="&DTALabels;ProsodicSymbol"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#SpeechActLabel -->
+
+    <owl:Class rdf:about="&DTALabels;SpeechActLabel">
+        <rdfs:subClassOf rdf:resource="&DTALabels;GlobalCoding"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&DTALabels;Labels"/>
+                <owl:someValuesFrom rdf:resource="&luo;SpeechAct"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#SpeechActTypeLabel -->
+
+    <owl:Class rdf:about="&DTALabels;SpeechActTypeLabel">
+        <rdfs:label xml:lang="en">&quot;Speech Act Type Label&quot;</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&DTALabels;SpeechActLabel"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&DTALabels;takesValue"/>
+                <owl:allValuesFrom rdf:resource="&DTALabels;SpeechActTypeValue"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#SpeechActTypeValue -->
+
+    <owl:Class rdf:about="&DTALabels;SpeechActTypeValue">
+        <rdfs:subClassOf rdf:resource="&DTALabels;DTAValue"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&DTALabels;isValueTakenBy"/>
+                <owl:someValuesFrom rdf:resource="&DTALabels;SpeechActTypeLabel"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#SpeechModeTypeLabel -->
+
+    <owl:Class rdf:about="&DTALabels;SpeechModeTypeLabel">
+        <rdfs:subClassOf rdf:resource="&DTALabels;SpeechActLabel"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&DTALabels;takesValue"/>
+                <owl:someValuesFrom rdf:resource="&DTALabels;SpeechModeTypeValue"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#SpeechModeTypeValue -->
+
+    <owl:Class rdf:about="&DTALabels;SpeechModeTypeValue">
+        <rdfs:subClassOf rdf:resource="&DTALabels;DTAValue"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&DTALabels;isValueTakenBy"/>
+                <owl:someValuesFrom rdf:resource="&DTALabels;SpeechModeTypeLabel"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#StartExclamationSymbol -->
+
+    <owl:Class rdf:about="&DTALabels;StartExclamationSymbol">
+        <rdfs:label>&quot;¡&quot;</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&DTALabels;ExclamationSymbol"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#StartQuestionSymbol -->
+
+    <owl:Class rdf:about="&DTALabels;StartQuestionSymbol">
+        <rdfs:label>&quot;¿&quot;</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&DTALabels;QuestionSymbol"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#StartSimultaneousUtteranceSymbol -->
+
+    <owl:Class rdf:about="&DTALabels;StartSimultaneousUtteranceSymbol">
+        <rdfs:label>&quot;{&quot;</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&DTALabels;SimultaneousUtteranceSymbol"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#StutterSymbol -->
+
+    <owl:Class rdf:about="&DTALabels;StutterSymbol">
+        <rdfs:label>&quot;-&quot;</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&DTALabels;ProsodicSymbol"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#SyntacticUnitLabel -->
+
+    <owl:Class rdf:about="&DTALabels;SyntacticUnitLabel">
+        <rdfs:subClassOf rdf:resource="&DTALabels;BasicLinguisticLabel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#UnintelligiblePartOfUtterance -->
+
+    <owl:Class rdf:about="&DTALabels;UnintelligiblePartOfUtterance">
+        <rdfs:label>&quot;XX&quot;</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&DTALabels;PhoneticTranscriptionWildcard"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#UnintelligibleSyllable -->
+
+    <owl:Class rdf:about="&DTALabels;UnintelligibleSyllable">
+        <rdfs:label>&quot;X&quot;</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&DTALabels;PhoneticTranscriptionWildcard"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#UnintelligibleUtterance -->
+
+    <owl:Class rdf:about="&DTALabels;UnintelligibleUtterance">
+        <rdfs:label>&quot;XXX&quot;</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&DTALabels;PhoneticTranscriptionWildcard"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#UnintelligibleWord -->
+
+    <owl:Class rdf:about="&DTALabels;UnintelligibleWord">
+        <rdfs:label>&quot;&amp;X&quot;</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&DTALabels;PhoneticTranscriptionWildcard"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#UtteranceCoding -->
+
+    <owl:Class rdf:about="&DTALabels;UtteranceCoding">
+        <rdfs:subClassOf rdf:resource="&DTALabels;BasicLinguisticLabel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#UtteranceContext -->
+
+    <owl:Class rdf:about="&DTALabels;UtteranceContext">
+        <rdfs:label xml:lang="en">&quot;Utterance context&quot;</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&DTALabels;Context"/>
+        <rdfs:isDefinedBy xml:lang="en">&quot;A description of the environment and the conditions under which the utterance is formulated, which is necessary to uunderstand the contents of that particular utterance (for example, what someone is referring to or who s/he is addressing.&quot;</rdfs:isDefinedBy>
+        <valueExample xml:lang="en">&quot;A possible UtteranceContext for the Utterance &#39;Can I go to play?&#39;, is &#39;The participant is addressing his mother&#39;.&quot;</valueExample>
+        <valueExample xml:lang="en">&quot;A possible UtteranceContext for the Utterance &#39;What is this&#39;, is &#39;&lt;this&gt; refers to a toy truck&#39;.&quot;</valueExample>
+    </owl:Class>
+    
+
+
+    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#UtteranceOKValue -->
+
+    <owl:Class rdf:about="&DTALabels;UtteranceOKValue">
+        <rdfs:subClassOf rdf:resource="&DTALabels;DTAValue"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#UtterancePhoneticTranscription -->
+
+    <owl:Class rdf:about="&DTALabels;UtterancePhoneticTranscription">
+        <rdfs:subClassOf rdf:resource="&DTALabels;PhoneticTranscription"/>
+        <rdfs:subClassOf rdf:resource="&DTALabels;UtteranceTranscription"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&DTALabels;isLabelledWith"/>
+                <owl:someValuesFrom rdf:resource="&DTALabels;PhoneticTranscriptionLabel"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&rdf;Has"/>
+                <owl:someValuesFrom rdf:resource="&DTALabels;PhonemeTranscription"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#UtteranceTranscription -->
+
+    <owl:Class rdf:about="&DTALabels;UtteranceTranscription">
+        <rdfs:subClassOf rdf:resource="&DTAMeta;Transcription"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&DTALabels;isTranscriptionOf"/>
+                <owl:someValuesFrom rdf:resource="&luo;Utterance"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&DTALabels;isLabelledWith"/>
+                <owl:someValuesFrom rdf:resource="&DTALabels;UtteranceTranscriptionLabel"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&DTALabels;hasSyntacticProjection"/>
+                <owl:someValuesFrom rdf:resource="&luo;SyntacticUnit"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#UtteranceTranscriptionLabel -->
+
+    <owl:Class rdf:about="&DTALabels;UtteranceTranscriptionLabel">
+        <rdfs:subClassOf rdf:resource="&DTALabels;GlobalCoding"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&DTALabels;Labels"/>
+                <owl:someValuesFrom rdf:resource="&DTALabels;UtteranceTranscription"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#Wh-Word -->
+
+    <owl:Class rdf:about="&DTALabels;Wh-Word">
+        <rdfs:subClassOf rdf:resource="&luo;Word"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#WordByWordGlossLabel -->
+
+    <owl:Class rdf:about="&DTALabels;WordByWordGlossLabel">
+        <rdfs:label xml:lang="en">&quot;Word-by-word gloss&quot;</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&DTALabels;DTAGlossLabel"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&rdf;Has"/>
+                <owl:someValuesFrom rdf:resource="&luo;Word"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <valueExample xml:lang="en">&quot;The GeneralGloss for the Spanish Utterance &#39;A ella le gustan los camiones&#39; would be &#39;To her her like the trucks&#39;.&quot;</valueExample>
+    </owl:Class>
+    
+
+
+    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#isAdjectivalPhrase -->
+
+    <owl:Class rdf:about="&DTALabels;isAdjectivalPhrase">
+        <rdfs:subClassOf rdf:resource="&DTALabels;MigratedProjectCoding"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#isAdverbialPhrase -->
+
+    <owl:Class rdf:about="&DTALabels;isAdverbialPhrase">
+        <rdfs:subClassOf rdf:resource="&DTALabels;MigratedProjectCoding"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#isComplexSentence -->
+
+    <owl:Class rdf:about="&DTALabels;isComplexSentence">
+        <rdfs:subClassOf rdf:resource="&DTALabels;isSentence"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#isCompoundSentence -->
+
+    <owl:Class rdf:about="&DTALabels;isCompoundSentence">
+        <rdfs:subClassOf rdf:resource="&DTALabels;isComplexSentence"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#isCoordinateSentence -->
+
+    <owl:Class rdf:about="&DTALabels;isCoordinateSentence">
+        <rdfs:subClassOf rdf:resource="&DTALabels;isSentence"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#isFragment -->
+
+    <owl:Class rdf:about="&DTALabels;isFragment">
+        <rdfs:subClassOf rdf:resource="&DTALabels;MigratedProjectCoding"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#isNounPhrase -->
+
+    <owl:Class rdf:about="&DTALabels;isNounPhrase">
+        <rdfs:subClassOf rdf:resource="&DTALabels;MigratedProjectCoding"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#isPrepositionalPhrase -->
+
+    <owl:Class rdf:about="&DTALabels;isPrepositionalPhrase">
+        <rdfs:subClassOf rdf:resource="&DTALabels;MigratedProjectCoding"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#isRelativePronoun -->
+
+    <owl:Class rdf:about="&DTALabels;isRelativePronoun">
+        <rdfs:subClassOf rdf:resource="&DTALabels;MigratedProjectCoding"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#isSentence -->
+
+    <owl:Class rdf:about="&DTALabels;isSentence">
+        <rdfs:subClassOf rdf:resource="&DTALabels;MigratedProjectCoding"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#isSimpleSentence -->
+
+    <owl:Class rdf:about="&DTALabels;isSimpleSentence">
+        <rdfs:subClassOf rdf:resource="&DTALabels;isSentence"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#isWh-Word -->
+
+    <owl:Class rdf:about="&DTALabels;isWh-Word">
+        <rdfs:subClassOf rdf:resource="&DTALabels;MigratedProjectCoding"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Metadata_Ontology#Coding -->
+
+    <owl:Class rdf:about="&DTAMeta;Coding">
+        <rdfs:subClassOf rdf:resource="&lao;LinguisticFeature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Metadata_Ontology#Transcription -->
+
+    <owl:Class rdf:about="&DTAMeta;Transcription">
+        <rdfs:subClassOf rdf:resource="&luo;TextUnit"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&DTALabels;isLabelledWith"/>
+                <owl:someValuesFrom rdf:resource="&DTALabels;MorphologicalCoding"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#ADJP -->
+
+    <owl:NamedIndividual rdf:about="&DTALabels;ADJP">
+        <rdf:type rdf:resource="&DTALabels;AdjectivalPhrase"/>
+        <rdfs:label>&quot;ADJP&quot;</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#ADVP -->
+
+    <owl:NamedIndividual rdf:about="&DTALabels;ADVP">
+        <rdf:type rdf:resource="&DTALabels;AdverbialPhrase"/>
+        <rdfs:label>&quot;ADVP&quot;</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#ANSWER -->
+
+    <owl:Thing rdf:about="&DTALabels;ANSWER">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#ANSWER-OLD -->
+
+    <owl:NamedIndividual rdf:about="&DTALabels;ANSWER-OLD">
+        <rdf:type rdf:resource="&DTALabels;SpeechModeTypeValue"/>
+        <rdfs:label xml:lang="en">&quot;ANSWER (OLD)&quot;</rdfs:label>
+        <isValueTakenBy rdf:resource="&DTALabels;Answer-OLD"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#ANSWH -->
+
+    <owl:NamedIndividual rdf:about="&DTALabels;ANSWH">
+        <rdf:type rdf:resource="&DTALabels;SpeechModeTypeValue"/>
+        <isValueTakenBy rdf:resource="&DTALabels;Answer-Wh"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#ANSYN -->
+
+    <owl:NamedIndividual rdf:about="&DTALabels;ANSYN">
+        <rdf:type rdf:resource="&DTALabels;SpeechModeTypeValue"/>
+        <isValueTakenBy rdf:resource="&DTALabels;Answer-Y/N"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#Answer -->
+
+    <owl:Thing rdf:about="&DTALabels;Answer">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#Answer-OLD -->
+
+    <owl:NamedIndividual rdf:about="&DTALabels;Answer-OLD">
+        <rdf:type rdf:resource="&DTALabels;AnswerSpeechModeTypeLabel"/>
+        <rdfs:label xml:lang="en">&quot;Answer (ANSWER)&quot;</rdfs:label>
+        <rdfs:isDefinedBy xml:lang="en">&quot;This SpeechModeTypeLabel is applied when the subject is answering a question.&quot;</rdfs:isDefinedBy>
+        <takesValue rdf:resource="&DTALabels;ANSWER-OLD"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#Answer-Wh -->
+
+    <owl:NamedIndividual rdf:about="&DTALabels;Answer-Wh">
+        <rdf:type rdf:resource="&DTALabels;AnswerSpeechModeTypeLabel"/>
+        <rdfs:label xml:lang="en">&quot;Answer-Wh&quot;</rdfs:label>
+        <rdfs:isDefinedBy xml:lang="en">&quot;This SpeechModeTypeLabel is applied when the subjectanswers a question headed by a wh-word.&quot;</rdfs:isDefinedBy>
+        <takesValue rdf:resource="&DTALabels;ANSWH"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#Answer-Y/N -->
+
+    <owl:NamedIndividual rdf:about="&DTALabels;Answer-Y/N">
+        <rdf:type rdf:resource="&DTALabels;AnswerSpeechModeTypeLabel"/>
+        <rdfs:label xml:lang="en">&quot;Answer-Y/N&quot;</rdfs:label>
+        <rdfs:isDefinedBy xml:lang="en">&quot;This SpeechModeTypeLabel is applied when the subject answers a question that can be answered by yes or no.&quot;</rdfs:isDefinedBy>
+        <takesValue rdf:resource="&DTALabels;ANSYN"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#BLANK -->
+
+    <owl:NamedIndividual rdf:about="&DTALabels;BLANK">
+        <rdf:type rdf:resource="&DTALabels;UtteranceOKValue"/>
+        <rdfs:label rdf:datatype="&xsd;nonNegativeInteger">0</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#CORRECT -->
+
+    <owl:NamedIndividual rdf:about="&DTALabels;CORRECT">
+        <rdf:type rdf:resource="&DTALabels;UtteranceOKValue"/>
+        <rdfs:label rdf:datatype="&xsd;nonNegativeInteger">1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#COUNT -->
+
+    <owl:NamedIndividual rdf:about="&DTALabels;COUNT">
+        <rdf:type rdf:resource="&DTALabels;SpeechActTypeValue"/>
+        <isValueTakenBy rdf:resource="&DTALabels;CountingLabel"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#CountingLabel -->
+
+    <owl:NamedIndividual rdf:about="&DTALabels;CountingLabel">
+        <rdf:type rdf:resource="&DTALabels;SpeechActTypeLabel"/>
+        <rdfs:label xml:lang="en">&quot;Declarative/Assertive&quot;</rdfs:label>
+        <rdfs:isDefinedBy xml:lang="en">&quot;The speaker is saying numbers in a sequence.&quot;</rdfs:isDefinedBy>
+        <takesValue rdf:resource="&DTALabels;COUNT"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#DECL -->
+
+    <owl:NamedIndividual rdf:about="&DTALabels;DECL">
+        <rdf:type rdf:resource="&DTALabels;SpeechActTypeValue"/>
+        <isValueTakenBy rdf:resource="&DTALabels;DeclarativeOrAssertiveLabel"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#DP -->
+
+    <owl:NamedIndividual rdf:about="&DTALabels;DP">
+        <rdf:type rdf:resource="&DTALabels;DeterminerPhrase"/>
+        <rdfs:label>&quot;DP&quot;</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#DeclarativeOrAssertiveLabel -->
+
+    <owl:NamedIndividual rdf:about="&DTALabels;DeclarativeOrAssertiveLabel">
+        <rdf:type rdf:resource="&DTALabels;AssertiveLabel"/>
+        <rdfs:label xml:lang="en">&quot;Declarative/Assertive&quot;</rdfs:label>
+        <rdfs:isDefinedBy xml:lang="en">&quot;The utterance is an affirmation or a negation.&quot;</rdfs:isDefinedBy>
+        <takesValue rdf:resource="&DTALabels;DeclarativeOrAssertiveLabel"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#EXPR -->
+
+    <owl:Thing rdf:about="&DTALabels;EXPR">
+        <rdf:type rdf:resource="&DTALabels;SpeechActTypeValue"/>
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <isValueTakenBy rdf:resource="&DTALabels;ExpressiveOrExclamationLabel"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#ExpressiveOrExclamationLabel -->
+
+    <owl:NamedIndividual rdf:about="&DTALabels;ExpressiveOrExclamationLabel">
+        <rdf:type rdf:resource="&DTALabels;ExpressiveLabel"/>
+        <rdfs:isDefinedBy xml:lang="en">&quot;Any word or non-word with exclamatory intonation.&quot;</rdfs:isDefinedBy>
+        <takesValue rdf:resource="&DTALabels;EXPR"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#FRAG -->
+
+    <owl:NamedIndividual rdf:about="&DTALabels;FRAG">
+        <rdf:type rdf:resource="&DTALabels;Fragment"/>
+        <rdfs:label>&quot;FRAG&quot;</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#GREET -->
+
+    <owl:NamedIndividual rdf:about="&DTALabels;GREET">
+        <rdf:type rdf:resource="&DTALabels;SpeechActTypeValue"/>
+        <isValueTakenBy rdf:resource="&DTALabels;GreetingLabel"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#GreetingLabel -->
+
+    <owl:NamedIndividual rdf:about="&DTALabels;GreetingLabel">
+        <rdf:type rdf:resource="&DTALabels;SpeechActTypeLabel"/>
+        <rdfs:isDefinedBy xml:lang="en">&quot;The utterance&#39;s purpose is greeting or saying goodbye.&quot;</rdfs:isDefinedBy>
+        <takesValue rdf:resource="&DTALabels;GREET"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#IMPER -->
+
+    <owl:NamedIndividual rdf:about="&DTALabels;IMPER">
+        <rdf:type rdf:resource="&DTALabels;SpeechActTypeValue"/>
+        <isValueTakenBy rdf:resource="&DTALabels;ImperativeLabel"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#INCORRECT -->
+
+    <owl:NamedIndividual rdf:about="&DTALabels;INCORRECT">
+        <rdf:type rdf:resource="&DTALabels;UtteranceOKValue"/>
+        <rdfs:label rdf:datatype="&xsd;nonNegativeInteger">2</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#ImperativeLabel -->
+
+    <owl:NamedIndividual rdf:about="&DTALabels;ImperativeLabel">
+        <rdf:type rdf:resource="&DTALabels;DirectiveLabel"/>
+        <rdfs:isDefinedBy xml:lang="en">&quot;The utterance is an order for someone to do or not do something.&quot;</rdfs:isDefinedBy>
+        <takesValue rdf:resource="&DTALabels;IMPER"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#N-A -->
+
+    <owl:NamedIndividual rdf:about="&DTALabels;N-A">
+        <rdf:type rdf:resource="&DTALabels;UtteranceOKValue"/>
+        <rdfs:label rdf:datatype="&xsd;nonNegativeInteger">3</rdfs:label>
+        <rdfs:label xml:lang="en">&quot;N/A&quot;</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#NAME -->
+
+    <owl:NamedIndividual rdf:about="&DTALabels;NAME">
+        <rdf:type rdf:resource="&DTALabels;SpeechActTypeValue"/>
+        <isValueTakenBy rdf:resource="&DTALabels;NamingLabel"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#NP -->
+
+    <owl:NamedIndividual rdf:about="&DTALabels;NP">
+        <rdf:type rdf:resource="&DTALabels;NounPhrase"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#NamingLabel -->
+
+    <owl:NamedIndividual rdf:about="&DTALabels;NamingLabel">
+        <rdf:type rdf:resource="&DTALabels;SpeechActTypeLabel"/>
+        <rdfs:isDefinedBy xml:lang="en">&quot;The utterance is the name of an object or person.&quot;</rdfs:isDefinedBy>
+        <takesValue rdf:resource="&DTALabels;NAME"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#OTHANS -->
+
+    <owl:NamedIndividual rdf:about="&DTALabels;OTHANS">
+        <rdf:type rdf:resource="&DTALabels;SpeechModeTypeValue"/>
+        <isValueTakenBy rdf:resource="&DTALabels;OtherAnswer"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#OTHER -->
+
+    <owl:NamedIndividual rdf:about="&DTALabels;OTHER">
+        <rdf:type rdf:resource="&DTALabels;SpeechModeTypeValue"/>
+        <isValueTakenBy rdf:resource="&DTALabels;OtherSpeechModeTypeLabel"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#OTHR -->
+
+    <owl:NamedIndividual rdf:about="&DTALabels;OTHR">
+        <rdf:type rdf:resource="&DTALabels;SpeechActTypeValue"/>
+        <isValueTakenBy rdf:resource="&DTALabels;OtherLabel"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#OTHREP -->
+
+    <owl:NamedIndividual rdf:about="&DTALabels;OTHREP">
+        <rdf:type rdf:resource="&DTALabels;SpeechModeTypeValue"/>
+        <isValueTakenBy rdf:resource="&DTALabels;OtherRepetition"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#OtherAnswer -->
+
+    <owl:NamedIndividual rdf:about="&DTALabels;OtherAnswer">
+        <rdf:type rdf:resource="&DTALabels;AnswerSpeechModeTypeLabel"/>
+        <rdfs:label xml:lang="en">&quot;Other Answer&quot;</rdfs:label>
+        <rdfs:isDefinedBy xml:lang="en">&quot;This SpeechModeTypeLabel is applied when the subject answers a question which is not a Wh-question or a Y/N-question.&quot;</rdfs:isDefinedBy>
+        <takesValue rdf:resource="&DTALabels;OTHANS"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#OtherLabel -->
+
+    <owl:NamedIndividual rdf:about="&DTALabels;OtherLabel">
+        <rdf:type rdf:resource="&DTALabels;SpeechActTypeLabel"/>
+        <rdfs:isDefinedBy xml:lang="en">&quot;A DTALabel that is applied to any utterance that cannot be labelled with any other SpeechActTypeLabel.&quot;</rdfs:isDefinedBy>
+        <takesValue rdf:resource="&DTALabels;OTHR"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#OtherRepetition -->
+
+    <owl:NamedIndividual rdf:about="&DTALabels;OtherRepetition">
+        <rdf:type rdf:resource="&DTALabels;RepetitionSpeechModeTypeLabel"/>
+        <rdfs:isDefinedBy xml:lang="en">&quot;This SpeechModeTypeLabel is applied when the subject repeats an utterance or part of an utterance said by other person.&quot;</rdfs:isDefinedBy>
+        <takesValue rdf:resource="&DTALabels;OTHREP"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#OtherSpeechModeTypeLabel -->
+
+    <owl:NamedIndividual rdf:about="&DTALabels;OtherSpeechModeTypeLabel">
+        <rdf:type rdf:resource="&DTALabels;SpeechModeTypeLabel"/>
+        <rdfs:label xml:lang="en">&quot;Other&quot;</rdfs:label>
+        <rdfs:isDefinedBy xml:lang="en">&quot;This SpeechModeTypeLabel is applied when no other SpeechModeTypeLabel can be applied.&quot;</rdfs:isDefinedBy>
+        <takesValue rdf:resource="&DTALabels;OTHER"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#POLIT -->
+
+    <owl:NamedIndividual rdf:about="&DTALabels;POLIT">
+        <rdf:type rdf:resource="&DTALabels;SpeechActTypeValue"/>
+        <isValueTakenBy rdf:resource="&DTALabels;PolitenessLabel"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#PP -->
+
+    <owl:NamedIndividual rdf:about="&DTALabels;PP">
+        <rdf:type rdf:resource="&DTALabels;PrepositionalPhrase"/>
+        <rdfs:label>&quot;PP&quot;</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#PROMIS -->
+
+    <owl:NamedIndividual rdf:about="&DTALabels;PROMIS">
+        <rdf:type rdf:resource="&DTALabels;SpeechActTypeValue"/>
+        <isValueTakenBy rdf:resource="&DTALabels;PromiseLabel"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#PolitenessLabel -->
+
+    <owl:NamedIndividual rdf:about="&DTALabels;PolitenessLabel">
+        <rdf:type rdf:resource="&DTALabels;SpeechActTypeLabel"/>
+        <rdfs:isDefinedBy xml:lang="en">&quot;An utterance involving a polite expression or expressing some form of politenes&quot;.</rdfs:isDefinedBy>
+        <takesValue rdf:resource="&DTALabels;POLIT"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#PromiseLabel -->
+
+    <owl:NamedIndividual rdf:about="&DTALabels;PromiseLabel">
+        <rdf:type rdf:resource="&DTALabels;CommissiveLabel"/>
+        <rdfs:isDefinedBy xml:lang="en">&quot;Al label applied to utterances by means of which the subject commits himself/herself to (not to) do something.&quot;</rdfs:isDefinedBy>
+        <takesValue rdf:resource="&DTALabels;PROMIS"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#QUEST -->
+
+    <owl:NamedIndividual rdf:about="&DTALabels;QUEST">
+        <rdf:type rdf:resource="&DTALabels;SpeechActTypeValue"/>
+        <isValueTakenBy rdf:resource="&DTALabels;QuestionLabel"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#QuestionLabel -->
+
+    <owl:NamedIndividual rdf:about="&DTALabels;QuestionLabel">
+        <rdf:type rdf:resource="&DTALabels;DirectiveLabel"/>
+        <rdfs:isDefinedBy xml:lang="en">&quot;The utterance requests information.&quot;</rdfs:isDefinedBy>
+        <takesValue rdf:resource="&DTALabels;QUEST"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#REL -->
+
+    <owl:NamedIndividual rdf:about="&DTALabels;REL">
+        <rdf:type rdf:resource="&DTALabels;RelativePronoun"/>
+        <rdfs:label>&quot;REL&quot;</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#REP -->
+
+    <owl:Thing rdf:about="&DTALabels;REP">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#REP-OLD -->
+
+    <owl:NamedIndividual rdf:about="&DTALabels;REP-OLD">
+        <rdf:type rdf:resource="&DTALabels;SpeechModeTypeValue"/>
+        <rdfs:label xml:lang="en">&quot;REP (OLD)&quot;</rdfs:label>
+        <isValueTakenBy rdf:resource="&DTALabels;Repetition-OLD"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#REQ -->
+
+    <owl:NamedIndividual rdf:about="&DTALabels;REQ">
+        <rdf:type rdf:resource="&DTALabels;SpeechActTypeValue"/>
+        <isValueTakenBy rdf:resource="&DTALabels;WishOrRequestLabel"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#RESP -->
+
+    <owl:Thing rdf:about="&DTALabels;RESP">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#RESP-OLD -->
+
+    <owl:NamedIndividual rdf:about="&DTALabels;RESP-OLD">
+        <rdf:type rdf:resource="&DTALabels;SpeechModeTypeValue"/>
+        <rdfs:label xml:lang="en">&quot;RESP (OLD)&quot;</rdfs:label>
+        <isValueTakenBy rdf:resource="&DTALabels;Response-OLD"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#Repetition-OLD -->
+
+    <owl:NamedIndividual rdf:about="&DTALabels;Repetition-OLD">
+        <rdf:type rdf:resource="&DTALabels;RepetitionSpeechModeTypeLabel"/>
+        <rdfs:label xml:lang="en">&quot;Repetition (REP)&quot;</rdfs:label>
+        <rdfs:isDefinedBy xml:lang="en">&quot;This SpeechModeTypeLabel is applied when the subject is repeating an utterance or part of an utterance present in the discourse.&quot;</rdfs:isDefinedBy>
+        <takesValue rdf:resource="&DTALabels;REP-OLD"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#Response-OLD -->
+
+    <owl:NamedIndividual rdf:about="&DTALabels;Response-OLD">
+        <rdf:type rdf:resource="&DTALabels;SpeechModeTypeLabel"/>
+        <rdfs:label xml:lang="en">&quot;Response (RESP)&quot;</rdfs:label>
+        <rdfs:isDefinedBy xml:lang="en">&quot;This SpeechModeTypeLabel is applied when the subject&#39;s utterance is triggered by something in the context.&quot;</rdfs:isDefinedBy>
+        <takesValue rdf:resource="&DTALabels;RESP-OLD"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#SING -->
+
+    <owl:NamedIndividual rdf:about="&DTALabels;SING">
+        <rdf:type rdf:resource="&DTALabels;SpeechActTypeValue"/>
+        <isValueTakenBy rdf:resource="&DTALabels;SingingLabel"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#SLFREP -->
+
+    <owl:NamedIndividual rdf:about="&DTALabels;SLFREP">
+        <rdf:type rdf:resource="&DTALabels;SpeechModeTypeValue"/>
+        <isValueTakenBy rdf:resource="&DTALabels;Self-repetition"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#SPONT -->
+
+    <owl:NamedIndividual rdf:about="&DTALabels;SPONT">
+        <rdf:type rdf:resource="&DTALabels;SpeechModeTypeValue"/>
+        <isValueTakenBy rdf:resource="&DTALabels;Spontaneous"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#Self-repetition -->
+
+    <owl:NamedIndividual rdf:about="&DTALabels;Self-repetition">
+        <rdf:type rdf:resource="&DTALabels;RepetitionSpeechModeTypeLabel"/>
+        <rdfs:label xml:lang="en">&quot;Self-repetition&quot;</rdfs:label>
+        <rdfs:isDefinedBy xml:lang="en">&quot;This SpeechModeTypeLabel is applied when the subject repeats an utterance or part of an utterance said by himself.&quot;</rdfs:isDefinedBy>
+        <takesValue rdf:resource="&DTALabels;SLFREP"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#SingingLabel -->
+
+    <owl:NamedIndividual rdf:about="&DTALabels;SingingLabel">
+        <rdf:type rdf:resource="&DTALabels;SpeechActTypeLabel"/>
+        <rdfs:isDefinedBy xml:lang="en">&quot;The utterance is part of a song.&quot;</rdfs:isDefinedBy>
+        <takesValue rdf:resource="&DTALabels;SING"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#Spontaneous -->
+
+    <owl:NamedIndividual rdf:about="&DTALabels;Spontaneous">
+        <rdf:type rdf:resource="&DTALabels;SpeechModeTypeLabel"/>
+        <rdfs:label xml:lang="en">&quot;Spontaneous&quot;</rdfs:label>
+        <rdfs:isDefinedBy xml:lang="en">&quot;This SpeechModeTypeLabel is applied when the subject&#39;s utterance is not triggered by something in the context.&quot;</rdfs:isDefinedBy>
+        <takesValue rdf:resource="&DTALabels;SPONT"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#UNCLEARSPEECHMODE -->
+
+    <owl:NamedIndividual rdf:about="&DTALabels;UNCLEARSPEECHMODE">
+        <rdf:type rdf:resource="&DTALabels;SpeechModeTypeValue"/>
+        <rdfs:label>UNCLR</rdfs:label>
+        <isValueTakenBy rdf:resource="&DTALabels;UnclearSpeechModeTypeLabel"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#UNCLR -->
+
+    <owl:NamedIndividual rdf:about="&DTALabels;UNCLR">
+        <rdf:type rdf:resource="&DTALabels;SpeechActTypeValue"/>
+        <isValueTakenBy rdf:resource="&DTALabels;UnclearLabel"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#UnclearLabel -->
+
+    <owl:NamedIndividual rdf:about="&DTALabels;UnclearLabel">
+        <rdf:type rdf:resource="&DTALabels;SpeechActTypeLabel"/>
+        <takesValue rdf:resource="&DTALabels;UNCLR"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#UnclearSpeechModeTypeLabel -->
+
+    <owl:NamedIndividual rdf:about="&DTALabels;UnclearSpeechModeTypeLabel">
+        <rdf:type rdf:resource="&DTALabels;SpeechModeTypeLabel"/>
+        <rdfs:label xml:lang="en">&quot;Unclear&quot;</rdfs:label>
+        <rdfs:isDefinedBy xml:lang="en">&quot;This SpeechModeTypeLabel is applied when it is unclear whether the subjects utterance is spontaneous or not.&quot;</rdfs:isDefinedBy>
+        <takesValue rdf:resource="&DTALabels;UNCLEARSPEECHMODE"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#WH -->
+
+    <owl:NamedIndividual rdf:about="&DTALabels;WH">
+        <rdf:type rdf:resource="&DTALabels;Wh-Word"/>
+        <rdfs:label>&quot;WH&quot;</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#WishOrRequestLabel -->
+
+    <owl:NamedIndividual rdf:about="&DTALabels;WishOrRequestLabel">
+        <rdf:type rdf:resource="&DTALabels;DirectiveLabel"/>
+        <rdfs:isDefinedBy xml:lang="en">&quot;The utterance is a request, a vocative, or expresses a wish.&quot;</rdfs:isDefinedBy>
+        <takesValue rdf:resource="&DTALabels;REQ"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#YNOK -->
+
+    <owl:NamedIndividual rdf:about="&DTALabels;YNOK">
+        <rdf:type rdf:resource="&DTALabels;SpeechActTypeValue"/>
+        <isValueTakenBy rdf:resource="&DTALabels;YesOrNoOrOKLabel"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#YesOrNoOrOKLabel -->
+
+    <owl:NamedIndividual rdf:about="&DTALabels;YesOrNoOrOKLabel">
+        <rdf:type rdf:resource="&DTALabels;SpeechActTypeLabel"/>
+        <rdfs:isDefinedBy xml:lang="en">&quot;The utterance is formed only by yes, no, OK, or their equivalents in other languages.&quot;</rdfs:isDefinedBy>
+        <takesValue rdf:resource="&DTALabels;YNOK"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="&DTALabels;MorphologicalEncoding">
+        <rdfs:label xml:lang="en">&quot;Morphological coding&quot;</rdfs:label>
+        <valueExample xml:lang="en">&quot;For the UtteranceTranscription &#39;She wants more trucks&#39;, there are two possible MorphologicalCodings:
+1.- &#39;she want-s more truck-s&#39;
+2.- &#39;she want-3SG more truck-PL&#39;.&quot;</valueExample>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.2.3.1824) http://owlapi.sourceforge.net -->
+
