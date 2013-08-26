@@ -10,19 +10,19 @@
     <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
     <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
     <!ENTITY io "http://ilsa.fdi.ucm.es/apareja/OntoLingAnnot/IntegrationOntology#" >
-    <!ENTITY DTALabels "http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#" >
+    <!ENTITY DTALabels "https://github.com/apareja/DTA_Ontologies/blob/master/DTA_Labels_Ontology#" >
     <!ENTITY luo "http://ilsa.fdi.ucm.es/apareja/OntoLingAnnot/LinguisticUnitOntology#" >
     <!ENTITY lvo "http://ilsa.fdi.ucm.es/apareja/OntoLingAnnot/LinguisticValueOntology#" >
-    <!ENTITY DTAMeta "http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Metadata_Ontology#" >
+    <!ENTITY DTAMeta "https://github.com/apareja/DTA_Ontologies/blob/master/DTA_Metadata_Ontology#" >
     <!ENTITY lao "http://ilsa.fdi.ucm.es/apareja/OntoLingAnnot/LinguisticAttributeOntology#" >
-    <!ENTITY Answer-Y "http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#Answer-Y/" >
+    <!ENTITY Answer-Y "https://github.com/apareja/DTA_Ontologies/blob/master/DTA_Labels_Ontology#Answer-Y/" >
 ]>
 
 
-<rdf:RDF xmlns="http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#"
-     xml:base="http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology"
+<rdf:RDF xmlns="https://github.com/apareja/DTA_Ontologies/blob/master/DTA_Labels_Ontology#"
+     xml:base="https://github.com/apareja/DTA_Ontologies/blob/master/DTA_Labels_Ontology"
      xmlns:lvo="http://ilsa.fdi.ucm.es/apareja/OntoLingAnnot/LinguisticValueOntology#"
-     xmlns:DTAMeta="http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Metadata_Ontology#"
+     xmlns:DTAMeta="https://github.com/apareja/DTA_Ontologies/blob/master/DTA_Metadata_Ontology#"
      xmlns:io="http://ilsa.fdi.ucm.es/apareja/OntoLingAnnot/IntegrationOntology#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:luo="http://ilsa.fdi.ucm.es/apareja/OntoLingAnnot/LinguisticUnitOntology#"
@@ -31,11 +31,11 @@
      xmlns:swrlx="http://www.w3.org/2003/11/swrlx#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:Answer-Y="&DTALabels;Answer-Y/"
-     xmlns:DTALabels="http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#"
+     xmlns:DTALabels="https://github.com/apareja/DTA_Ontologies/blob/master/DTA_Labels_Ontology#"
      xmlns:swrl="http://www.w3.org/2003/11/swrl#"
      xmlns:lao="http://ilsa.fdi.ucm.es/apareja/OntoLingAnnot/LinguisticAttributeOntology#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-    <owl:Ontology rdf:about="http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology"/>
+    <owl:Ontology rdf:about="https://github.com/apareja/DTA_Ontologies/blob/master/DTA_Labels_Ontology"/>
     
 
 
@@ -65,7 +65,7 @@
     
 
 
-    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#SpeechActDataType -->
+    <!-- https://github.com/apareja/DTA_Ontologies/blob/master/DTA_Labels_Ontology#SpeechActDataType -->
 
     <rdfs:Datatype rdf:about="&DTALabels;SpeechActDataType">
         <owl:equivalentClass>
@@ -125,7 +125,7 @@
     
 
 
-    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#SpeechModeDataType -->
+    <!-- https://github.com/apareja/DTA_Ontologies/blob/master/DTA_Labels_Ontology#SpeechModeDataType -->
 
     <rdfs:Datatype rdf:about="&DTALabels;SpeechModeDataType">
         <owl:equivalentClass>
@@ -250,7 +250,7 @@
     
 
 
-    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#Labels -->
+    <!-- https://github.com/apareja/DTA_Ontologies/blob/master/DTA_Labels_Ontology#Labels -->
 
     <owl:ObjectProperty rdf:about="&DTALabels;Labels">
         <owl:inverseOf rdf:resource="&DTALabels;isLabelledWith"/>
@@ -258,7 +258,7 @@
     
 
 
-    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#hasSyntacticProjection -->
+    <!-- https://github.com/apareja/DTA_Ontologies/blob/master/DTA_Labels_Ontology#hasSyntacticProjection -->
 
     <owl:ObjectProperty rdf:about="&DTALabels;hasSyntacticProjection">
         <rdfs:range rdf:resource="&DTALabels;Sentence"/>
@@ -268,31 +268,31 @@
     
 
 
-    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#hasTranscription -->
+    <!-- https://github.com/apareja/DTA_Ontologies/blob/master/DTA_Labels_Ontology#hasTranscription -->
 
     <owl:ObjectProperty rdf:about="&DTALabels;hasTranscription"/>
     
 
 
-    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#isLabelledWith -->
+    <!-- https://github.com/apareja/DTA_Ontologies/blob/master/DTA_Labels_Ontology#isLabelledWith -->
 
     <owl:ObjectProperty rdf:about="&DTALabels;isLabelledWith"/>
     
 
 
-    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#isMappedOnto -->
+    <!-- https://github.com/apareja/DTA_Ontologies/blob/master/DTA_Labels_Ontology#isMappedOnto -->
 
     <owl:ObjectProperty rdf:about="&DTALabels;isMappedOnto"/>
     
 
 
-    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#isOK -->
+    <!-- https://github.com/apareja/DTA_Ontologies/blob/master/DTA_Labels_Ontology#isOK -->
 
     <owl:ObjectProperty rdf:about="&DTALabels;isOK"/>
     
 
 
-    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#isSyntacticProjectionOf -->
+    <!-- https://github.com/apareja/DTA_Ontologies/blob/master/DTA_Labels_Ontology#isSyntacticProjectionOf -->
 
     <owl:ObjectProperty rdf:about="&DTALabels;isSyntacticProjectionOf">
         <rdfs:domain rdf:resource="&DTALabels;Sentence"/>
@@ -301,7 +301,7 @@
     
 
 
-    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#isTranscriptionOf -->
+    <!-- https://github.com/apareja/DTA_Ontologies/blob/master/DTA_Labels_Ontology#isTranscriptionOf -->
 
     <owl:ObjectProperty rdf:about="&DTALabels;isTranscriptionOf">
         <owl:inverseOf rdf:resource="&DTALabels;hasTranscription"/>
@@ -309,7 +309,7 @@
     
 
 
-    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#isValueTakenBy -->
+    <!-- https://github.com/apareja/DTA_Ontologies/blob/master/DTA_Labels_Ontology#isValueTakenBy -->
 
     <owl:ObjectProperty rdf:about="&DTALabels;isValueTakenBy">
         <owl:inverseOf rdf:resource="&DTALabels;takesValue"/>
@@ -317,7 +317,7 @@
     
 
 
-    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#takesValue -->
+    <!-- https://github.com/apareja/DTA_Ontologies/blob/master/DTA_Labels_Ontology#takesValue -->
 
     <owl:ObjectProperty rdf:about="&DTALabels;takesValue"/>
     
@@ -348,7 +348,7 @@
     
 
 
-    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#correspondsToISOCatDataCategory -->
+    <!-- https://github.com/apareja/DTA_Ontologies/blob/master/DTA_Labels_Ontology#correspondsToISOCatDataCategory -->
 
     <owl:DatatypeProperty rdf:about="&DTALabels;correspondsToISOCatDataCategory">
         <rdfs:domain rdf:resource="&DTALabels;DTALabel"/>
@@ -357,7 +357,7 @@
     
 
 
-    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#hasNumberOfMorphemes -->
+    <!-- https://github.com/apareja/DTA_Ontologies/blob/master/DTA_Labels_Ontology#hasNumberOfMorphemes -->
 
     <owl:DatatypeProperty rdf:about="&DTALabels;hasNumberOfMorphemes">
         <rdf:type rdf:resource="&owl;FunctionalProperty"/>
@@ -367,7 +367,7 @@
     
 
 
-    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#hasNumberOfSyllables -->
+    <!-- https://github.com/apareja/DTA_Ontologies/blob/master/DTA_Labels_Ontology#hasNumberOfSyllables -->
 
     <owl:DatatypeProperty rdf:about="&DTALabels;hasNumberOfSyllables">
         <rdf:type rdf:resource="&owl;FunctionalProperty"/>
@@ -377,7 +377,7 @@
     
 
 
-    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#hasNumberOfWords -->
+    <!-- https://github.com/apareja/DTA_Ontologies/blob/master/DTA_Labels_Ontology#hasNumberOfWords -->
 
     <owl:DatatypeProperty rdf:about="&DTALabels;hasNumberOfWords">
         <rdf:type rdf:resource="&owl;FunctionalProperty"/>
@@ -387,7 +387,7 @@
     
 
 
-    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#hasOvertVerb -->
+    <!-- https://github.com/apareja/DTA_Ontologies/blob/master/DTA_Labels_Ontology#hasOvertVerb -->
 
     <owl:DatatypeProperty rdf:about="&DTALabels;hasOvertVerb">
         <rdf:type rdf:resource="&owl;FunctionalProperty"/>
@@ -398,7 +398,7 @@
     
 
 
-    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#isFragment -->
+    <!-- https://github.com/apareja/DTA_Ontologies/blob/master/DTA_Labels_Ontology#isFragment -->
 
     <owl:DatatypeProperty rdf:about="&DTALabels;isFragment">
         <rdfs:domain rdf:resource="&DTALabels;UtteranceTranscription"/>
@@ -407,7 +407,7 @@
     
 
 
-    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#isSentence -->
+    <!-- https://github.com/apareja/DTA_Ontologies/blob/master/DTA_Labels_Ontology#isSentence -->
 
     <owl:DatatypeProperty rdf:about="&DTALabels;isSentence">
         <rdf:type rdf:resource="&owl;FunctionalProperty"/>
@@ -417,7 +417,7 @@
     
 
 
-    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#isWhQuestion -->
+    <!-- https://github.com/apareja/DTA_Ontologies/blob/master/DTA_Labels_Ontology#isWhQuestion -->
 
     <owl:DatatypeProperty rdf:about="&DTALabels;isWhQuestion">
         <rdfs:domain rdf:resource="&luo;Utterance"/>
@@ -426,7 +426,7 @@
     
 
 
-    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#isYesOrNoQuestion -->
+    <!-- https://github.com/apareja/DTA_Ontologies/blob/master/DTA_Labels_Ontology#isYesOrNoQuestion -->
 
     <owl:DatatypeProperty rdf:about="&DTALabels;isYesOrNoQuestion">
         <rdfs:domain rdf:resource="&luo;Utterance"/>
@@ -931,7 +931,7 @@
     
 
 
-    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#AdjectivalPhrase -->
+    <!-- https://github.com/apareja/DTA_Ontologies/blob/master/DTA_Labels_Ontology#AdjectivalPhrase -->
 
     <owl:Class rdf:about="&DTALabels;AdjectivalPhrase">
         <rdfs:subClassOf rdf:resource="&luo;Phrase"/>
@@ -939,7 +939,7 @@
     
 
 
-    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#AdverbialPhrase -->
+    <!-- https://github.com/apareja/DTA_Ontologies/blob/master/DTA_Labels_Ontology#AdverbialPhrase -->
 
     <owl:Class rdf:about="&DTALabels;AdverbialPhrase">
         <rdfs:subClassOf rdf:resource="&luo;Phrase"/>
@@ -947,7 +947,7 @@
     
 
 
-    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#AnswerSpeechModeTypeLabel -->
+    <!-- https://github.com/apareja/DTA_Ontologies/blob/master/DTA_Labels_Ontology#AnswerSpeechModeTypeLabel -->
 
     <owl:Class rdf:about="&DTALabels;AnswerSpeechModeTypeLabel">
         <rdfs:subClassOf rdf:resource="&DTALabels;SpeechModeTypeLabel"/>
@@ -955,7 +955,7 @@
     
 
 
-    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#AssertiveLabel -->
+    <!-- https://github.com/apareja/DTA_Ontologies/blob/master/DTA_Labels_Ontology#AssertiveLabel -->
 
     <owl:Class rdf:about="&DTALabels;AssertiveLabel">
         <rdfs:subClassOf rdf:resource="&DTALabels;SpeechActTypeLabel"/>
@@ -969,7 +969,7 @@
     
 
 
-    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#BasicLinguisticLabel -->
+    <!-- https://github.com/apareja/DTA_Ontologies/blob/master/DTA_Labels_Ontology#BasicLinguisticLabel -->
 
     <owl:Class rdf:about="&DTALabels;BasicLinguisticLabel">
         <rdfs:subClassOf rdf:resource="&DTALabels;GlobalCoding"/>
@@ -977,7 +977,7 @@
     
 
 
-    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#BreakoffSymbol -->
+    <!-- https://github.com/apareja/DTA_Ontologies/blob/master/DTA_Labels_Ontology#BreakoffSymbol -->
 
     <owl:Class rdf:about="&DTALabels;BreakoffSymbol">
         <rdfs:label>&quot;&gt;&quot;</rdfs:label>
@@ -986,7 +986,7 @@
     
 
 
-    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#Collection -->
+    <!-- https://github.com/apareja/DTA_Ontologies/blob/master/DTA_Labels_Ontology#Collection -->
 
     <owl:Class rdf:about="&DTALabels;Collection">
         <rdfs:subClassOf rdf:resource="&DTALabels;Object"/>
@@ -994,7 +994,7 @@
     
 
 
-    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#CommissiveLabel -->
+    <!-- https://github.com/apareja/DTA_Ontologies/blob/master/DTA_Labels_Ontology#CommissiveLabel -->
 
     <owl:Class rdf:about="&DTALabels;CommissiveLabel">
         <rdfs:subClassOf rdf:resource="&DTALabels;SpeechActTypeLabel"/>
@@ -1008,7 +1008,7 @@
     
 
 
-    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#ComplexSentence -->
+    <!-- https://github.com/apareja/DTA_Ontologies/blob/master/DTA_Labels_Ontology#ComplexSentence -->
 
     <owl:Class rdf:about="&DTALabels;ComplexSentence">
         <rdfs:subClassOf rdf:resource="&DTALabels;Sentence"/>
@@ -1016,7 +1016,7 @@
     
 
 
-    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#Context -->
+    <!-- https://github.com/apareja/DTA_Ontologies/blob/master/DTA_Labels_Ontology#Context -->
 
     <owl:Class rdf:about="&DTALabels;Context">
         <rdfs:subClassOf rdf:resource="&DTALabels;UtteranceTranscriptionLabel"/>
@@ -1024,7 +1024,7 @@
     
 
 
-    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#CoordinateSentence -->
+    <!-- https://github.com/apareja/DTA_Ontologies/blob/master/DTA_Labels_Ontology#CoordinateSentence -->
 
     <owl:Class rdf:about="&DTALabels;CoordinateSentence">
         <rdfs:subClassOf rdf:resource="&DTALabels;Sentence"/>
@@ -1032,7 +1032,7 @@
     
 
 
-    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#DTAAnnotation -->
+    <!-- https://github.com/apareja/DTA_Ontologies/blob/master/DTA_Labels_Ontology#DTAAnnotation -->
 
     <owl:Class rdf:about="&DTALabels;DTAAnnotation">
         <rdfs:subClassOf rdf:resource="&io;LinguisticAnnotation"/>
@@ -1047,7 +1047,7 @@
     
 
 
-    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#DTAGloss -->
+    <!-- https://github.com/apareja/DTA_Ontologies/blob/master/DTA_Labels_Ontology#DTAGloss -->
 
     <owl:Class rdf:about="&DTALabels;DTAGloss">
         <rdfs:subClassOf rdf:resource="&DTALabels;DTAAnnotation"/>
@@ -1062,7 +1062,7 @@
     
 
 
-    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#DTAGlossLabel -->
+    <!-- https://github.com/apareja/DTA_Ontologies/blob/master/DTA_Labels_Ontology#DTAGlossLabel -->
 
     <owl:Class rdf:about="&DTALabels;DTAGlossLabel">
         <rdfs:subClassOf rdf:resource="&DTALabels;UtteranceTranscriptionLabel"/>
@@ -1076,7 +1076,7 @@
     
 
 
-    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#DTALabel -->
+    <!-- https://github.com/apareja/DTA_Ontologies/blob/master/DTA_Labels_Ontology#DTALabel -->
 
     <owl:Class rdf:about="&DTALabels;DTALabel">
         <owl:equivalentClass rdf:resource="&DTAMeta;Coding"/>
@@ -1086,7 +1086,7 @@
     
 
 
-    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#DTAObject -->
+    <!-- https://github.com/apareja/DTA_Ontologies/blob/master/DTA_Labels_Ontology#DTAObject -->
 
     <owl:Class rdf:about="&DTALabels;DTAObject">
         <rdfs:subClassOf rdf:resource="&DTALabels;Object"/>
@@ -1094,7 +1094,7 @@
     
 
 
-    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#DTAPair -->
+    <!-- https://github.com/apareja/DTA_Ontologies/blob/master/DTA_Labels_Ontology#DTAPair -->
 
     <owl:Class rdf:about="&DTALabels;DTAPair">
         <rdfs:subClassOf rdf:resource="&DTALabels;Pair"/>
@@ -1102,7 +1102,7 @@
     
 
 
-    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#DTAValue -->
+    <!-- https://github.com/apareja/DTA_Ontologies/blob/master/DTA_Labels_Ontology#DTAValue -->
 
     <owl:Class rdf:about="&DTALabels;DTAValue">
         <rdfs:subClassOf rdf:resource="&lvo;LinguisticValue"/>
@@ -1116,7 +1116,7 @@
     
 
 
-    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#Declaration -->
+    <!-- https://github.com/apareja/DTA_Ontologies/blob/master/DTA_Labels_Ontology#Declaration -->
 
     <owl:Class rdf:about="&DTALabels;Declaration">
         <rdfs:subClassOf rdf:resource="&luo;SpeechAct"/>
@@ -1132,7 +1132,7 @@
     
 
 
-    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#DeclarationLabel -->
+    <!-- https://github.com/apareja/DTA_Ontologies/blob/master/DTA_Labels_Ontology#DeclarationLabel -->
 
     <owl:Class rdf:about="&DTALabels;DeclarationLabel">
         <rdfs:subClassOf rdf:resource="&DTALabels;SpeechActTypeLabel"/>
@@ -1146,7 +1146,7 @@
     
 
 
-    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#DeterminerPhrase -->
+    <!-- https://github.com/apareja/DTA_Ontologies/blob/master/DTA_Labels_Ontology#DeterminerPhrase -->
 
     <owl:Class rdf:about="&DTALabels;DeterminerPhrase">
         <rdfs:subClassOf rdf:resource="&luo;Phrase"/>
@@ -1154,7 +1154,7 @@
     
 
 
-    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#DirectiveLabel -->
+    <!-- https://github.com/apareja/DTA_Ontologies/blob/master/DTA_Labels_Ontology#DirectiveLabel -->
 
     <owl:Class rdf:about="&DTALabels;DirectiveLabel">
         <rdfs:subClassOf rdf:resource="&DTALabels;SpeechActTypeLabel"/>
@@ -1168,7 +1168,7 @@
     
 
 
-    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#EndExclamationSymbol -->
+    <!-- https://github.com/apareja/DTA_Ontologies/blob/master/DTA_Labels_Ontology#EndExclamationSymbol -->
 
     <owl:Class rdf:about="&DTALabels;EndExclamationSymbol">
         <rdfs:label>&quot;!&quot;</rdfs:label>
@@ -1177,7 +1177,7 @@
     
 
 
-    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#EndOfStatementSymbol -->
+    <!-- https://github.com/apareja/DTA_Ontologies/blob/master/DTA_Labels_Ontology#EndOfStatementSymbol -->
 
     <owl:Class rdf:about="&DTALabels;EndOfStatementSymbol">
         <rdfs:label>&quot;.&quot;</rdfs:label>
@@ -1186,7 +1186,7 @@
     
 
 
-    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#EndQuestionSymbol -->
+    <!-- https://github.com/apareja/DTA_Ontologies/blob/master/DTA_Labels_Ontology#EndQuestionSymbol -->
 
     <owl:Class rdf:about="&DTALabels;EndQuestionSymbol">
         <rdfs:label>&quot;?&quot;</rdfs:label>
@@ -1195,7 +1195,7 @@
     
 
 
-    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#EndSimultaneousUtteranceSymbol -->
+    <!-- https://github.com/apareja/DTA_Ontologies/blob/master/DTA_Labels_Ontology#EndSimultaneousUtteranceSymbol -->
 
     <owl:Class rdf:about="&DTALabels;EndSimultaneousUtteranceSymbol">
         <rdfs:label>&quot;}&quot;</rdfs:label>
@@ -1204,7 +1204,7 @@
     
 
 
-    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#ExclamationSymbol -->
+    <!-- https://github.com/apareja/DTA_Ontologies/blob/master/DTA_Labels_Ontology#ExclamationSymbol -->
 
     <owl:Class rdf:about="&DTALabels;ExclamationSymbol">
         <rdfs:subClassOf rdf:resource="&DTALabels;ProsodicSymbol"/>
@@ -1212,7 +1212,7 @@
     
 
 
-    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#ExpressiveLabel -->
+    <!-- https://github.com/apareja/DTA_Ontologies/blob/master/DTA_Labels_Ontology#ExpressiveLabel -->
 
     <owl:Class rdf:about="&DTALabels;ExpressiveLabel">
         <rdfs:subClassOf rdf:resource="&DTALabels;SpeechActTypeLabel"/>
@@ -1226,7 +1226,7 @@
     
 
 
-    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#Fragment -->
+    <!-- https://github.com/apareja/DTA_Ontologies/blob/master/DTA_Labels_Ontology#Fragment -->
 
     <owl:Class rdf:about="&DTALabels;Fragment">
         <rdfs:subClassOf rdf:resource="&luo;SyntacticUnit"/>
@@ -1235,7 +1235,7 @@
     
 
 
-    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#GeneralContext -->
+    <!-- https://github.com/apareja/DTA_Ontologies/blob/master/DTA_Labels_Ontology#GeneralContext -->
 
     <owl:Class rdf:about="&DTALabels;GeneralContext">
         <rdfs:label xml:lang="en">&quot;General context&quot;</rdfs:label>
@@ -1248,7 +1248,7 @@
     
 
 
-    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#GeneralGlossLabel -->
+    <!-- https://github.com/apareja/DTA_Ontologies/blob/master/DTA_Labels_Ontology#GeneralGlossLabel -->
 
     <owl:Class rdf:about="&DTALabels;GeneralGlossLabel">
         <rdfs:label xml:lang="en">&quot;General gloss&quot;</rdfs:label>
@@ -1258,7 +1258,7 @@
     
 
 
-    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#GlobalCoding -->
+    <!-- https://github.com/apareja/DTA_Ontologies/blob/master/DTA_Labels_Ontology#GlobalCoding -->
 
     <owl:Class rdf:about="&DTALabels;GlobalCoding">
         <rdfs:subClassOf rdf:resource="&DTALabels;DTALabel"/>
@@ -1266,7 +1266,7 @@
     
 
 
-    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#Gloss -->
+    <!-- https://github.com/apareja/DTA_Ontologies/blob/master/DTA_Labels_Ontology#Gloss -->
 
     <owl:Class rdf:about="&DTALabels;Gloss">
         <rdfs:subClassOf rdf:resource="&io;LinguisticAnnotation"/>
@@ -1274,7 +1274,7 @@
     
 
 
-    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#HesitationPause -->
+    <!-- https://github.com/apareja/DTA_Ontologies/blob/master/DTA_Labels_Ontology#HesitationPause -->
 
     <owl:Class rdf:about="&DTALabels;HesitationPause">
         <rdfs:subClassOf rdf:resource="&DTALabels;PauseSymbol"/>
@@ -1282,7 +1282,7 @@
     
 
 
-    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#InterruptionSymbol -->
+    <!-- https://github.com/apareja/DTA_Ontologies/blob/master/DTA_Labels_Ontology#InterruptionSymbol -->
 
     <owl:Class rdf:about="&DTALabels;InterruptionSymbol">
         <rdfs:label>&quot;^&quot;</rdfs:label>
@@ -1291,7 +1291,7 @@
     
 
 
-    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#MigratedProjectCoding -->
+    <!-- https://github.com/apareja/DTA_Ontologies/blob/master/DTA_Labels_Ontology#MigratedProjectCoding -->
 
     <owl:Class rdf:about="&DTALabels;MigratedProjectCoding">
         <rdfs:subClassOf rdf:resource="&DTALabels;ProjectSpecificCoding"/>
@@ -1299,7 +1299,7 @@
     
 
 
-    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#MorphoSyntacticUnit -->
+    <!-- https://github.com/apareja/DTA_Ontologies/blob/master/DTA_Labels_Ontology#MorphoSyntacticUnit -->
 
     <owl:Class rdf:about="&DTALabels;MorphoSyntacticUnit">
         <rdfs:subClassOf rdf:resource="&luo;LinguisticUnit"/>
@@ -1307,7 +1307,7 @@
     
 
 
-    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#MorphologicalCoding -->
+    <!-- https://github.com/apareja/DTA_Ontologies/blob/master/DTA_Labels_Ontology#MorphologicalCoding -->
 
     <owl:Class rdf:about="&DTALabels;MorphologicalCoding">
         <rdfs:label xml:lang="en">&quot;Morphological coding&quot;</rdfs:label>
@@ -1332,7 +1332,7 @@
     
 
 
-    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#NoTranscriptionProvidedSymbol -->
+    <!-- https://github.com/apareja/DTA_Ontologies/blob/master/DTA_Labels_Ontology#NoTranscriptionProvidedSymbol -->
 
     <owl:Class rdf:about="&DTALabels;NoTranscriptionProvidedSymbol">
         <rdfs:label>&quot;ww&quot;</rdfs:label>
@@ -1341,7 +1341,7 @@
     
 
 
-    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#NounPhrase -->
+    <!-- https://github.com/apareja/DTA_Ontologies/blob/master/DTA_Labels_Ontology#NounPhrase -->
 
     <owl:Class rdf:about="&DTALabels;NounPhrase">
         <rdfs:label>&quot;NP&quot;</rdfs:label>
@@ -1350,7 +1350,7 @@
     
 
 
-    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#Object -->
+    <!-- https://github.com/apareja/DTA_Ontologies/blob/master/DTA_Labels_Ontology#Object -->
 
     <owl:Class rdf:about="&DTALabels;Object">
         <rdfs:subClassOf rdf:resource="&owl;Thing"/>
@@ -1358,7 +1358,7 @@
     
 
 
-    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#Pair -->
+    <!-- https://github.com/apareja/DTA_Ontologies/blob/master/DTA_Labels_Ontology#Pair -->
 
     <owl:Class rdf:about="&DTALabels;Pair">
         <rdfs:subClassOf rdf:resource="&DTALabels;Collection"/>
@@ -1366,7 +1366,7 @@
     
 
 
-    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#PauseSymbol -->
+    <!-- https://github.com/apareja/DTA_Ontologies/blob/master/DTA_Labels_Ontology#PauseSymbol -->
 
     <owl:Class rdf:about="&DTALabels;PauseSymbol">
         <rdfs:label>&quot;...&quot;</rdfs:label>
@@ -1375,7 +1375,7 @@
     
 
 
-    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#PhonemeTranscription -->
+    <!-- https://github.com/apareja/DTA_Ontologies/blob/master/DTA_Labels_Ontology#PhonemeTranscription -->
 
     <owl:Class rdf:about="&DTALabels;PhonemeTranscription">
         <rdfs:subClassOf rdf:resource="&DTALabels;PhoneticTranscriptionSymbol"/>
@@ -1389,7 +1389,7 @@
     
 
 
-    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#PhoneticTranscription -->
+    <!-- https://github.com/apareja/DTA_Ontologies/blob/master/DTA_Labels_Ontology#PhoneticTranscription -->
 
     <owl:Class rdf:about="&DTALabels;PhoneticTranscription">
         <rdfs:subClassOf rdf:resource="&DTAMeta;Transcription"/>
@@ -1409,7 +1409,7 @@
     
 
 
-    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#PhoneticTranscriptionLabel -->
+    <!-- https://github.com/apareja/DTA_Ontologies/blob/master/DTA_Labels_Ontology#PhoneticTranscriptionLabel -->
 
     <owl:Class rdf:about="&DTALabels;PhoneticTranscriptionLabel">
         <rdfs:label xml:lang="en">&quot;Phonetic transcription&quot;</rdfs:label>
@@ -1425,7 +1425,7 @@
     
 
 
-    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#PhoneticTranscriptionSymbol -->
+    <!-- https://github.com/apareja/DTA_Ontologies/blob/master/DTA_Labels_Ontology#PhoneticTranscriptionSymbol -->
 
     <owl:Class rdf:about="&DTALabels;PhoneticTranscriptionSymbol">
         <rdfs:subClassOf rdf:resource="&DTAMeta;Transcription"/>
@@ -1439,7 +1439,7 @@
     
 
 
-    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#PhoneticTranscriptionWildcard -->
+    <!-- https://github.com/apareja/DTA_Ontologies/blob/master/DTA_Labels_Ontology#PhoneticTranscriptionWildcard -->
 
     <owl:Class rdf:about="&DTALabels;PhoneticTranscriptionWildcard">
         <rdfs:subClassOf rdf:resource="&DTALabels;PhoneticTranscriptionSymbol"/>
@@ -1447,7 +1447,7 @@
     
 
 
-    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#PrepositionalPhrase -->
+    <!-- https://github.com/apareja/DTA_Ontologies/blob/master/DTA_Labels_Ontology#PrepositionalPhrase -->
 
     <owl:Class rdf:about="&DTALabels;PrepositionalPhrase">
         <rdfs:subClassOf rdf:resource="&luo;Phrase"/>
@@ -1455,7 +1455,7 @@
     
 
 
-    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#ProjectSpecificCoding -->
+    <!-- https://github.com/apareja/DTA_Ontologies/blob/master/DTA_Labels_Ontology#ProjectSpecificCoding -->
 
     <owl:Class rdf:about="&DTALabels;ProjectSpecificCoding">
         <rdfs:subClassOf rdf:resource="&DTALabels;DTALabel"/>
@@ -1463,7 +1463,7 @@
     
 
 
-    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#ProsodicSymbol -->
+    <!-- https://github.com/apareja/DTA_Ontologies/blob/master/DTA_Labels_Ontology#ProsodicSymbol -->
 
     <owl:Class rdf:about="&DTALabels;ProsodicSymbol">
         <rdfs:subClassOf rdf:resource="&DTALabels;PhoneticTranscriptionSymbol"/>
@@ -1471,7 +1471,7 @@
     
 
 
-    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#QuestionSymbol -->
+    <!-- https://github.com/apareja/DTA_Ontologies/blob/master/DTA_Labels_Ontology#QuestionSymbol -->
 
     <owl:Class rdf:about="&DTALabels;QuestionSymbol">
         <rdfs:subClassOf rdf:resource="&DTALabels;ProsodicSymbol"/>
@@ -1479,7 +1479,7 @@
     
 
 
-    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#RelativePronoun -->
+    <!-- https://github.com/apareja/DTA_Ontologies/blob/master/DTA_Labels_Ontology#RelativePronoun -->
 
     <owl:Class rdf:about="&DTALabels;RelativePronoun">
         <rdfs:subClassOf rdf:resource="&luo;Pronoun"/>
@@ -1487,7 +1487,7 @@
     
 
 
-    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#RepetitionSpeechModeTypeLabel -->
+    <!-- https://github.com/apareja/DTA_Ontologies/blob/master/DTA_Labels_Ontology#RepetitionSpeechModeTypeLabel -->
 
     <owl:Class rdf:about="&DTALabels;RepetitionSpeechModeTypeLabel">
         <rdfs:label xml:lang="en">&quot;Other repetition&quot;</rdfs:label>
@@ -1496,7 +1496,7 @@
     
 
 
-    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#Sentence -->
+    <!-- https://github.com/apareja/DTA_Ontologies/blob/master/DTA_Labels_Ontology#Sentence -->
 
     <owl:Class rdf:about="&DTALabels;Sentence">
         <rdfs:subClassOf rdf:resource="&luo;SyntacticUnit"/>
@@ -1504,7 +1504,7 @@
     
 
 
-    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#SimultaneousUtteranceSymbol -->
+    <!-- https://github.com/apareja/DTA_Ontologies/blob/master/DTA_Labels_Ontology#SimultaneousUtteranceSymbol -->
 
     <owl:Class rdf:about="&DTALabels;SimultaneousUtteranceSymbol">
         <rdfs:subClassOf rdf:resource="&DTALabels;ProsodicSymbol"/>
@@ -1512,7 +1512,7 @@
     
 
 
-    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#SpeechActLabel -->
+    <!-- https://github.com/apareja/DTA_Ontologies/blob/master/DTA_Labels_Ontology#SpeechActLabel -->
 
     <owl:Class rdf:about="&DTALabels;SpeechActLabel">
         <rdfs:subClassOf rdf:resource="&DTALabels;GlobalCoding"/>
@@ -1526,7 +1526,7 @@
     
 
 
-    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#SpeechActTypeLabel -->
+    <!-- https://github.com/apareja/DTA_Ontologies/blob/master/DTA_Labels_Ontology#SpeechActTypeLabel -->
 
     <owl:Class rdf:about="&DTALabels;SpeechActTypeLabel">
         <rdfs:label xml:lang="en">&quot;Speech Act Type Label&quot;</rdfs:label>
@@ -1541,7 +1541,7 @@
     
 
 
-    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#SpeechActTypeValue -->
+    <!-- https://github.com/apareja/DTA_Ontologies/blob/master/DTA_Labels_Ontology#SpeechActTypeValue -->
 
     <owl:Class rdf:about="&DTALabels;SpeechActTypeValue">
         <rdfs:subClassOf rdf:resource="&DTALabels;DTAValue"/>
@@ -1555,7 +1555,7 @@
     
 
 
-    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#SpeechModeTypeLabel -->
+    <!-- https://github.com/apareja/DTA_Ontologies/blob/master/DTA_Labels_Ontology#SpeechModeTypeLabel -->
 
     <owl:Class rdf:about="&DTALabels;SpeechModeTypeLabel">
         <rdfs:subClassOf rdf:resource="&DTALabels;SpeechActLabel"/>
@@ -1569,7 +1569,7 @@
     
 
 
-    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#SpeechModeTypeValue -->
+    <!-- https://github.com/apareja/DTA_Ontologies/blob/master/DTA_Labels_Ontology#SpeechModeTypeValue -->
 
     <owl:Class rdf:about="&DTALabels;SpeechModeTypeValue">
         <rdfs:subClassOf rdf:resource="&DTALabels;DTAValue"/>
@@ -1583,7 +1583,7 @@
     
 
 
-    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#StartExclamationSymbol -->
+    <!-- https://github.com/apareja/DTA_Ontologies/blob/master/DTA_Labels_Ontology#StartExclamationSymbol -->
 
     <owl:Class rdf:about="&DTALabels;StartExclamationSymbol">
         <rdfs:label>&quot;¡&quot;</rdfs:label>
@@ -1592,7 +1592,7 @@
     
 
 
-    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#StartQuestionSymbol -->
+    <!-- https://github.com/apareja/DTA_Ontologies/blob/master/DTA_Labels_Ontology#StartQuestionSymbol -->
 
     <owl:Class rdf:about="&DTALabels;StartQuestionSymbol">
         <rdfs:label>&quot;¿&quot;</rdfs:label>
@@ -1601,7 +1601,7 @@
     
 
 
-    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#StartSimultaneousUtteranceSymbol -->
+    <!-- https://github.com/apareja/DTA_Ontologies/blob/master/DTA_Labels_Ontology#StartSimultaneousUtteranceSymbol -->
 
     <owl:Class rdf:about="&DTALabels;StartSimultaneousUtteranceSymbol">
         <rdfs:label>&quot;{&quot;</rdfs:label>
@@ -1610,7 +1610,7 @@
     
 
 
-    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#StutterSymbol -->
+    <!-- https://github.com/apareja/DTA_Ontologies/blob/master/DTA_Labels_Ontology#StutterSymbol -->
 
     <owl:Class rdf:about="&DTALabels;StutterSymbol">
         <rdfs:label>&quot;-&quot;</rdfs:label>
@@ -1619,7 +1619,7 @@
     
 
 
-    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#SyntacticUnitLabel -->
+    <!-- https://github.com/apareja/DTA_Ontologies/blob/master/DTA_Labels_Ontology#SyntacticUnitLabel -->
 
     <owl:Class rdf:about="&DTALabels;SyntacticUnitLabel">
         <rdfs:subClassOf rdf:resource="&DTALabels;BasicLinguisticLabel"/>
@@ -1627,7 +1627,7 @@
     
 
 
-    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#UnintelligiblePartOfUtterance -->
+    <!-- https://github.com/apareja/DTA_Ontologies/blob/master/DTA_Labels_Ontology#UnintelligiblePartOfUtterance -->
 
     <owl:Class rdf:about="&DTALabels;UnintelligiblePartOfUtterance">
         <rdfs:label>&quot;XX&quot;</rdfs:label>
@@ -1636,7 +1636,7 @@
     
 
 
-    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#UnintelligibleSyllable -->
+    <!-- https://github.com/apareja/DTA_Ontologies/blob/master/DTA_Labels_Ontology#UnintelligibleSyllable -->
 
     <owl:Class rdf:about="&DTALabels;UnintelligibleSyllable">
         <rdfs:label>&quot;X&quot;</rdfs:label>
@@ -1645,7 +1645,7 @@
     
 
 
-    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#UnintelligibleUtterance -->
+    <!-- https://github.com/apareja/DTA_Ontologies/blob/master/DTA_Labels_Ontology#UnintelligibleUtterance -->
 
     <owl:Class rdf:about="&DTALabels;UnintelligibleUtterance">
         <rdfs:label>&quot;XXX&quot;</rdfs:label>
@@ -1654,7 +1654,7 @@
     
 
 
-    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#UnintelligibleWord -->
+    <!-- https://github.com/apareja/DTA_Ontologies/blob/master/DTA_Labels_Ontology#UnintelligibleWord -->
 
     <owl:Class rdf:about="&DTALabels;UnintelligibleWord">
         <rdfs:label>&quot;&amp;X&quot;</rdfs:label>
@@ -1663,7 +1663,7 @@
     
 
 
-    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#UtteranceCoding -->
+    <!-- https://github.com/apareja/DTA_Ontologies/blob/master/DTA_Labels_Ontology#UtteranceCoding -->
 
     <owl:Class rdf:about="&DTALabels;UtteranceCoding">
         <rdfs:subClassOf rdf:resource="&DTALabels;BasicLinguisticLabel"/>
@@ -1671,7 +1671,7 @@
     
 
 
-    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#UtteranceContext -->
+    <!-- https://github.com/apareja/DTA_Ontologies/blob/master/DTA_Labels_Ontology#UtteranceContext -->
 
     <owl:Class rdf:about="&DTALabels;UtteranceContext">
         <rdfs:label xml:lang="en">&quot;Utterance context&quot;</rdfs:label>
@@ -1683,7 +1683,7 @@
     
 
 
-    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#UtteranceOKValue -->
+    <!-- https://github.com/apareja/DTA_Ontologies/blob/master/DTA_Labels_Ontology#UtteranceOKValue -->
 
     <owl:Class rdf:about="&DTALabels;UtteranceOKValue">
         <rdfs:subClassOf rdf:resource="&DTALabels;DTAValue"/>
@@ -1691,7 +1691,7 @@
     
 
 
-    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#UtterancePhoneticTranscription -->
+    <!-- https://github.com/apareja/DTA_Ontologies/blob/master/DTA_Labels_Ontology#UtterancePhoneticTranscription -->
 
     <owl:Class rdf:about="&DTALabels;UtterancePhoneticTranscription">
         <rdfs:subClassOf rdf:resource="&DTALabels;PhoneticTranscription"/>
@@ -1712,7 +1712,7 @@
     
 
 
-    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#UtteranceTranscription -->
+    <!-- https://github.com/apareja/DTA_Ontologies/blob/master/DTA_Labels_Ontology#UtteranceTranscription -->
 
     <owl:Class rdf:about="&DTALabels;UtteranceTranscription">
         <rdfs:subClassOf rdf:resource="&DTAMeta;Transcription"/>
@@ -1738,7 +1738,7 @@
     
 
 
-    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#UtteranceTranscriptionLabel -->
+    <!-- https://github.com/apareja/DTA_Ontologies/blob/master/DTA_Labels_Ontology#UtteranceTranscriptionLabel -->
 
     <owl:Class rdf:about="&DTALabels;UtteranceTranscriptionLabel">
         <rdfs:subClassOf rdf:resource="&DTALabels;GlobalCoding"/>
@@ -1752,7 +1752,7 @@
     
 
 
-    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#Wh-Word -->
+    <!-- https://github.com/apareja/DTA_Ontologies/blob/master/DTA_Labels_Ontology#Wh-Word -->
 
     <owl:Class rdf:about="&DTALabels;Wh-Word">
         <rdfs:subClassOf rdf:resource="&luo;Word"/>
@@ -1760,7 +1760,7 @@
     
 
 
-    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#WordByWordGlossLabel -->
+    <!-- https://github.com/apareja/DTA_Ontologies/blob/master/DTA_Labels_Ontology#WordByWordGlossLabel -->
 
     <owl:Class rdf:about="&DTALabels;WordByWordGlossLabel">
         <rdfs:label xml:lang="en">&quot;Word-by-word gloss&quot;</rdfs:label>
@@ -1776,7 +1776,7 @@
     
 
 
-    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#isAdjectivalPhrase -->
+    <!-- https://github.com/apareja/DTA_Ontologies/blob/master/DTA_Labels_Ontology#isAdjectivalPhrase -->
 
     <owl:Class rdf:about="&DTALabels;isAdjectivalPhrase">
         <rdfs:subClassOf rdf:resource="&DTALabels;MigratedProjectCoding"/>
@@ -1784,7 +1784,7 @@
     
 
 
-    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#isAdverbialPhrase -->
+    <!-- https://github.com/apareja/DTA_Ontologies/blob/master/DTA_Labels_Ontology#isAdverbialPhrase -->
 
     <owl:Class rdf:about="&DTALabels;isAdverbialPhrase">
         <rdfs:subClassOf rdf:resource="&DTALabels;MigratedProjectCoding"/>
@@ -1792,7 +1792,7 @@
     
 
 
-    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#isComplexSentence -->
+    <!-- https://github.com/apareja/DTA_Ontologies/blob/master/DTA_Labels_Ontology#isComplexSentence -->
 
     <owl:Class rdf:about="&DTALabels;isComplexSentence">
         <rdfs:subClassOf rdf:resource="&DTALabels;isSentence"/>
@@ -1800,7 +1800,7 @@
     
 
 
-    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#isCompoundSentence -->
+    <!-- https://github.com/apareja/DTA_Ontologies/blob/master/DTA_Labels_Ontology#isCompoundSentence -->
 
     <owl:Class rdf:about="&DTALabels;isCompoundSentence">
         <rdfs:subClassOf rdf:resource="&DTALabels;isComplexSentence"/>
@@ -1808,7 +1808,7 @@
     
 
 
-    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#isCoordinateSentence -->
+    <!-- https://github.com/apareja/DTA_Ontologies/blob/master/DTA_Labels_Ontology#isCoordinateSentence -->
 
     <owl:Class rdf:about="&DTALabels;isCoordinateSentence">
         <rdfs:subClassOf rdf:resource="&DTALabels;isSentence"/>
@@ -1816,7 +1816,7 @@
     
 
 
-    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#isFragment -->
+    <!-- https://github.com/apareja/DTA_Ontologies/blob/master/DTA_Labels_Ontology#isFragment -->
 
     <owl:Class rdf:about="&DTALabels;isFragment">
         <rdfs:subClassOf rdf:resource="&DTALabels;MigratedProjectCoding"/>
@@ -1824,7 +1824,7 @@
     
 
 
-    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#isNounPhrase -->
+    <!-- https://github.com/apareja/DTA_Ontologies/blob/master/DTA_Labels_Ontology#isNounPhrase -->
 
     <owl:Class rdf:about="&DTALabels;isNounPhrase">
         <rdfs:subClassOf rdf:resource="&DTALabels;MigratedProjectCoding"/>
@@ -1832,7 +1832,7 @@
     
 
 
-    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#isPrepositionalPhrase -->
+    <!-- https://github.com/apareja/DTA_Ontologies/blob/master/DTA_Labels_Ontology#isPrepositionalPhrase -->
 
     <owl:Class rdf:about="&DTALabels;isPrepositionalPhrase">
         <rdfs:subClassOf rdf:resource="&DTALabels;MigratedProjectCoding"/>
@@ -1840,7 +1840,7 @@
     
 
 
-    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#isRelativePronoun -->
+    <!-- https://github.com/apareja/DTA_Ontologies/blob/master/DTA_Labels_Ontology#isRelativePronoun -->
 
     <owl:Class rdf:about="&DTALabels;isRelativePronoun">
         <rdfs:subClassOf rdf:resource="&DTALabels;MigratedProjectCoding"/>
@@ -1848,7 +1848,7 @@
     
 
 
-    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#isSentence -->
+    <!-- https://github.com/apareja/DTA_Ontologies/blob/master/DTA_Labels_Ontology#isSentence -->
 
     <owl:Class rdf:about="&DTALabels;isSentence">
         <rdfs:subClassOf rdf:resource="&DTALabels;MigratedProjectCoding"/>
@@ -1856,7 +1856,7 @@
     
 
 
-    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#isSimpleSentence -->
+    <!-- https://github.com/apareja/DTA_Ontologies/blob/master/DTA_Labels_Ontology#isSimpleSentence -->
 
     <owl:Class rdf:about="&DTALabels;isSimpleSentence">
         <rdfs:subClassOf rdf:resource="&DTALabels;isSentence"/>
@@ -1864,7 +1864,7 @@
     
 
 
-    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#isWh-Word -->
+    <!-- https://github.com/apareja/DTA_Ontologies/blob/master/DTA_Labels_Ontology#isWh-Word -->
 
     <owl:Class rdf:about="&DTALabels;isWh-Word">
         <rdfs:subClassOf rdf:resource="&DTALabels;MigratedProjectCoding"/>
@@ -1872,7 +1872,7 @@
     
 
 
-    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Metadata_Ontology#Coding -->
+    <!-- https://github.com/apareja/DTA_Ontologies/blob/master/DTA_Metadata_Ontology#Coding -->
 
     <owl:Class rdf:about="&DTAMeta;Coding">
         <rdfs:subClassOf rdf:resource="&lao;LinguisticFeature"/>
@@ -1880,7 +1880,7 @@
     
 
 
-    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Metadata_Ontology#Transcription -->
+    <!-- https://github.com/apareja/DTA_Ontologies/blob/master/DTA_Metadata_Ontology#Transcription -->
 
     <owl:Class rdf:about="&DTAMeta;Transcription">
         <rdfs:subClassOf rdf:resource="&luo;TextUnit"/>
@@ -1905,7 +1905,7 @@
     
 
 
-    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#ADJP -->
+    <!-- https://github.com/apareja/DTA_Ontologies/blob/master/DTA_Labels_Ontology#ADJP -->
 
     <owl:NamedIndividual rdf:about="&DTALabels;ADJP">
         <rdf:type rdf:resource="&DTALabels;AdjectivalPhrase"/>
@@ -1914,7 +1914,7 @@
     
 
 
-    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#ADVP -->
+    <!-- https://github.com/apareja/DTA_Ontologies/blob/master/DTA_Labels_Ontology#ADVP -->
 
     <owl:NamedIndividual rdf:about="&DTALabels;ADVP">
         <rdf:type rdf:resource="&DTALabels;AdverbialPhrase"/>
@@ -1923,7 +1923,7 @@
     
 
 
-    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#ANSWER -->
+    <!-- https://github.com/apareja/DTA_Ontologies/blob/master/DTA_Labels_Ontology#ANSWER -->
 
     <owl:Thing rdf:about="&DTALabels;ANSWER">
         <rdf:type rdf:resource="&owl;NamedIndividual"/>
@@ -1931,7 +1931,7 @@
     
 
 
-    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#ANSWER-OLD -->
+    <!-- https://github.com/apareja/DTA_Ontologies/blob/master/DTA_Labels_Ontology#ANSWER-OLD -->
 
     <owl:NamedIndividual rdf:about="&DTALabels;ANSWER-OLD">
         <rdf:type rdf:resource="&DTALabels;SpeechModeTypeValue"/>
@@ -1941,7 +1941,7 @@
     
 
 
-    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#ANSWH -->
+    <!-- https://github.com/apareja/DTA_Ontologies/blob/master/DTA_Labels_Ontology#ANSWH -->
 
     <owl:NamedIndividual rdf:about="&DTALabels;ANSWH">
         <rdf:type rdf:resource="&DTALabels;SpeechModeTypeValue"/>
@@ -1950,7 +1950,7 @@
     
 
 
-    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#ANSYN -->
+    <!-- https://github.com/apareja/DTA_Ontologies/blob/master/DTA_Labels_Ontology#ANSYN -->
 
     <owl:NamedIndividual rdf:about="&DTALabels;ANSYN">
         <rdf:type rdf:resource="&DTALabels;SpeechModeTypeValue"/>
@@ -1959,7 +1959,7 @@
     
 
 
-    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#Answer -->
+    <!-- https://github.com/apareja/DTA_Ontologies/blob/master/DTA_Labels_Ontology#Answer -->
 
     <owl:Thing rdf:about="&DTALabels;Answer">
         <rdf:type rdf:resource="&owl;NamedIndividual"/>
@@ -1967,7 +1967,7 @@
     
 
 
-    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#Answer-OLD -->
+    <!-- https://github.com/apareja/DTA_Ontologies/blob/master/DTA_Labels_Ontology#Answer-OLD -->
 
     <owl:NamedIndividual rdf:about="&DTALabels;Answer-OLD">
         <rdf:type rdf:resource="&DTALabels;AnswerSpeechModeTypeLabel"/>
@@ -1978,7 +1978,7 @@
     
 
 
-    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#Answer-Wh -->
+    <!-- https://github.com/apareja/DTA_Ontologies/blob/master/DTA_Labels_Ontology#Answer-Wh -->
 
     <owl:NamedIndividual rdf:about="&DTALabels;Answer-Wh">
         <rdf:type rdf:resource="&DTALabels;AnswerSpeechModeTypeLabel"/>
@@ -1989,7 +1989,7 @@
     
 
 
-    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#Answer-Y/N -->
+    <!-- https://github.com/apareja/DTA_Ontologies/blob/master/DTA_Labels_Ontology#Answer-Y/N -->
 
     <owl:NamedIndividual rdf:about="&DTALabels;Answer-Y/N">
         <rdf:type rdf:resource="&DTALabels;AnswerSpeechModeTypeLabel"/>
@@ -2000,7 +2000,7 @@
     
 
 
-    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#BLANK -->
+    <!-- https://github.com/apareja/DTA_Ontologies/blob/master/DTA_Labels_Ontology#BLANK -->
 
     <owl:NamedIndividual rdf:about="&DTALabels;BLANK">
         <rdf:type rdf:resource="&DTALabels;UtteranceOKValue"/>
@@ -2009,7 +2009,7 @@
     
 
 
-    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#CORRECT -->
+    <!-- https://github.com/apareja/DTA_Ontologies/blob/master/DTA_Labels_Ontology#CORRECT -->
 
     <owl:NamedIndividual rdf:about="&DTALabels;CORRECT">
         <rdf:type rdf:resource="&DTALabels;UtteranceOKValue"/>
@@ -2018,7 +2018,7 @@
     
 
 
-    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#COUNT -->
+    <!-- https://github.com/apareja/DTA_Ontologies/blob/master/DTA_Labels_Ontology#COUNT -->
 
     <owl:NamedIndividual rdf:about="&DTALabels;COUNT">
         <rdf:type rdf:resource="&DTALabels;SpeechActTypeValue"/>
@@ -2027,7 +2027,7 @@
     
 
 
-    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#CountingLabel -->
+    <!-- https://github.com/apareja/DTA_Ontologies/blob/master/DTA_Labels_Ontology#CountingLabel -->
 
     <owl:NamedIndividual rdf:about="&DTALabels;CountingLabel">
         <rdf:type rdf:resource="&DTALabels;SpeechActTypeLabel"/>
@@ -2038,7 +2038,7 @@
     
 
 
-    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#DECL -->
+    <!-- https://github.com/apareja/DTA_Ontologies/blob/master/DTA_Labels_Ontology#DECL -->
 
     <owl:NamedIndividual rdf:about="&DTALabels;DECL">
         <rdf:type rdf:resource="&DTALabels;SpeechActTypeValue"/>
@@ -2047,7 +2047,7 @@
     
 
 
-    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#DP -->
+    <!-- https://github.com/apareja/DTA_Ontologies/blob/master/DTA_Labels_Ontology#DP -->
 
     <owl:NamedIndividual rdf:about="&DTALabels;DP">
         <rdf:type rdf:resource="&DTALabels;DeterminerPhrase"/>
@@ -2056,7 +2056,7 @@
     
 
 
-    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#DeclarativeOrAssertiveLabel -->
+    <!-- https://github.com/apareja/DTA_Ontologies/blob/master/DTA_Labels_Ontology#DeclarativeOrAssertiveLabel -->
 
     <owl:NamedIndividual rdf:about="&DTALabels;DeclarativeOrAssertiveLabel">
         <rdf:type rdf:resource="&DTALabels;AssertiveLabel"/>
@@ -2067,7 +2067,7 @@
     
 
 
-    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#EXPR -->
+    <!-- https://github.com/apareja/DTA_Ontologies/blob/master/DTA_Labels_Ontology#EXPR -->
 
     <owl:Thing rdf:about="&DTALabels;EXPR">
         <rdf:type rdf:resource="&DTALabels;SpeechActTypeValue"/>
@@ -2077,7 +2077,7 @@
     
 
 
-    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#ExpressiveOrExclamationLabel -->
+    <!-- https://github.com/apareja/DTA_Ontologies/blob/master/DTA_Labels_Ontology#ExpressiveOrExclamationLabel -->
 
     <owl:NamedIndividual rdf:about="&DTALabels;ExpressiveOrExclamationLabel">
         <rdf:type rdf:resource="&DTALabels;ExpressiveLabel"/>
@@ -2087,7 +2087,7 @@
     
 
 
-    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#FRAG -->
+    <!-- https://github.com/apareja/DTA_Ontologies/blob/master/DTA_Labels_Ontology#FRAG -->
 
     <owl:NamedIndividual rdf:about="&DTALabels;FRAG">
         <rdf:type rdf:resource="&DTALabels;Fragment"/>
@@ -2096,7 +2096,7 @@
     
 
 
-    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#GREET -->
+    <!-- https://github.com/apareja/DTA_Ontologies/blob/master/DTA_Labels_Ontology#GREET -->
 
     <owl:NamedIndividual rdf:about="&DTALabels;GREET">
         <rdf:type rdf:resource="&DTALabels;SpeechActTypeValue"/>
@@ -2105,7 +2105,7 @@
     
 
 
-    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#GreetingLabel -->
+    <!-- https://github.com/apareja/DTA_Ontologies/blob/master/DTA_Labels_Ontology#GreetingLabel -->
 
     <owl:NamedIndividual rdf:about="&DTALabels;GreetingLabel">
         <rdf:type rdf:resource="&DTALabels;SpeechActTypeLabel"/>
@@ -2115,7 +2115,7 @@
     
 
 
-    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#IMPER -->
+    <!-- https://github.com/apareja/DTA_Ontologies/blob/master/DTA_Labels_Ontology#IMPER -->
 
     <owl:NamedIndividual rdf:about="&DTALabels;IMPER">
         <rdf:type rdf:resource="&DTALabels;SpeechActTypeValue"/>
@@ -2124,7 +2124,7 @@
     
 
 
-    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#INCORRECT -->
+    <!-- https://github.com/apareja/DTA_Ontologies/blob/master/DTA_Labels_Ontology#INCORRECT -->
 
     <owl:NamedIndividual rdf:about="&DTALabels;INCORRECT">
         <rdf:type rdf:resource="&DTALabels;UtteranceOKValue"/>
@@ -2133,7 +2133,7 @@
     
 
 
-    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#ImperativeLabel -->
+    <!-- https://github.com/apareja/DTA_Ontologies/blob/master/DTA_Labels_Ontology#ImperativeLabel -->
 
     <owl:NamedIndividual rdf:about="&DTALabels;ImperativeLabel">
         <rdf:type rdf:resource="&DTALabels;DirectiveLabel"/>
@@ -2143,7 +2143,7 @@
     
 
 
-    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#N-A -->
+    <!-- https://github.com/apareja/DTA_Ontologies/blob/master/DTA_Labels_Ontology#N-A -->
 
     <owl:NamedIndividual rdf:about="&DTALabels;N-A">
         <rdf:type rdf:resource="&DTALabels;UtteranceOKValue"/>
@@ -2153,7 +2153,7 @@
     
 
 
-    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#NAME -->
+    <!-- https://github.com/apareja/DTA_Ontologies/blob/master/DTA_Labels_Ontology#NAME -->
 
     <owl:NamedIndividual rdf:about="&DTALabels;NAME">
         <rdf:type rdf:resource="&DTALabels;SpeechActTypeValue"/>
@@ -2162,7 +2162,7 @@
     
 
 
-    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#NP -->
+    <!-- https://github.com/apareja/DTA_Ontologies/blob/master/DTA_Labels_Ontology#NP -->
 
     <owl:NamedIndividual rdf:about="&DTALabels;NP">
         <rdf:type rdf:resource="&DTALabels;NounPhrase"/>
@@ -2170,7 +2170,7 @@
     
 
 
-    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#NamingLabel -->
+    <!-- https://github.com/apareja/DTA_Ontologies/blob/master/DTA_Labels_Ontology#NamingLabel -->
 
     <owl:NamedIndividual rdf:about="&DTALabels;NamingLabel">
         <rdf:type rdf:resource="&DTALabels;SpeechActTypeLabel"/>
@@ -2180,7 +2180,7 @@
     
 
 
-    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#OTHANS -->
+    <!-- https://github.com/apareja/DTA_Ontologies/blob/master/DTA_Labels_Ontology#OTHANS -->
 
     <owl:NamedIndividual rdf:about="&DTALabels;OTHANS">
         <rdf:type rdf:resource="&DTALabels;SpeechModeTypeValue"/>
@@ -2189,7 +2189,7 @@
     
 
 
-    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#OTHER -->
+    <!-- https://github.com/apareja/DTA_Ontologies/blob/master/DTA_Labels_Ontology#OTHER -->
 
     <owl:NamedIndividual rdf:about="&DTALabels;OTHER">
         <rdf:type rdf:resource="&DTALabels;SpeechModeTypeValue"/>
@@ -2198,7 +2198,7 @@
     
 
 
-    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#OTHR -->
+    <!-- https://github.com/apareja/DTA_Ontologies/blob/master/DTA_Labels_Ontology#OTHR -->
 
     <owl:NamedIndividual rdf:about="&DTALabels;OTHR">
         <rdf:type rdf:resource="&DTALabels;SpeechActTypeValue"/>
@@ -2207,7 +2207,7 @@
     
 
 
-    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#OTHREP -->
+    <!-- https://github.com/apareja/DTA_Ontologies/blob/master/DTA_Labels_Ontology#OTHREP -->
 
     <owl:NamedIndividual rdf:about="&DTALabels;OTHREP">
         <rdf:type rdf:resource="&DTALabels;SpeechModeTypeValue"/>
@@ -2216,7 +2216,7 @@
     
 
 
-    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#OtherAnswer -->
+    <!-- https://github.com/apareja/DTA_Ontologies/blob/master/DTA_Labels_Ontology#OtherAnswer -->
 
     <owl:NamedIndividual rdf:about="&DTALabels;OtherAnswer">
         <rdf:type rdf:resource="&DTALabels;AnswerSpeechModeTypeLabel"/>
@@ -2227,7 +2227,7 @@
     
 
 
-    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#OtherLabel -->
+    <!-- https://github.com/apareja/DTA_Ontologies/blob/master/DTA_Labels_Ontology#OtherLabel -->
 
     <owl:NamedIndividual rdf:about="&DTALabels;OtherLabel">
         <rdf:type rdf:resource="&DTALabels;SpeechActTypeLabel"/>
@@ -2237,7 +2237,7 @@
     
 
 
-    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#OtherRepetition -->
+    <!-- https://github.com/apareja/DTA_Ontologies/blob/master/DTA_Labels_Ontology#OtherRepetition -->
 
     <owl:NamedIndividual rdf:about="&DTALabels;OtherRepetition">
         <rdf:type rdf:resource="&DTALabels;RepetitionSpeechModeTypeLabel"/>
@@ -2247,7 +2247,7 @@
     
 
 
-    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#OtherSpeechModeTypeLabel -->
+    <!-- https://github.com/apareja/DTA_Ontologies/blob/master/DTA_Labels_Ontology#OtherSpeechModeTypeLabel -->
 
     <owl:NamedIndividual rdf:about="&DTALabels;OtherSpeechModeTypeLabel">
         <rdf:type rdf:resource="&DTALabels;SpeechModeTypeLabel"/>
@@ -2258,7 +2258,7 @@
     
 
 
-    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#POLIT -->
+    <!-- https://github.com/apareja/DTA_Ontologies/blob/master/DTA_Labels_Ontology#POLIT -->
 
     <owl:NamedIndividual rdf:about="&DTALabels;POLIT">
         <rdf:type rdf:resource="&DTALabels;SpeechActTypeValue"/>
@@ -2267,7 +2267,7 @@
     
 
 
-    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#PP -->
+    <!-- https://github.com/apareja/DTA_Ontologies/blob/master/DTA_Labels_Ontology#PP -->
 
     <owl:NamedIndividual rdf:about="&DTALabels;PP">
         <rdf:type rdf:resource="&DTALabels;PrepositionalPhrase"/>
@@ -2276,7 +2276,7 @@
     
 
 
-    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#PROMIS -->
+    <!-- https://github.com/apareja/DTA_Ontologies/blob/master/DTA_Labels_Ontology#PROMIS -->
 
     <owl:NamedIndividual rdf:about="&DTALabels;PROMIS">
         <rdf:type rdf:resource="&DTALabels;SpeechActTypeValue"/>
@@ -2285,7 +2285,7 @@
     
 
 
-    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#PolitenessLabel -->
+    <!-- https://github.com/apareja/DTA_Ontologies/blob/master/DTA_Labels_Ontology#PolitenessLabel -->
 
     <owl:NamedIndividual rdf:about="&DTALabels;PolitenessLabel">
         <rdf:type rdf:resource="&DTALabels;SpeechActTypeLabel"/>
@@ -2295,7 +2295,7 @@
     
 
 
-    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#PromiseLabel -->
+    <!-- https://github.com/apareja/DTA_Ontologies/blob/master/DTA_Labels_Ontology#PromiseLabel -->
 
     <owl:NamedIndividual rdf:about="&DTALabels;PromiseLabel">
         <rdf:type rdf:resource="&DTALabels;CommissiveLabel"/>
@@ -2305,7 +2305,7 @@
     
 
 
-    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#QUEST -->
+    <!-- https://github.com/apareja/DTA_Ontologies/blob/master/DTA_Labels_Ontology#QUEST -->
 
     <owl:NamedIndividual rdf:about="&DTALabels;QUEST">
         <rdf:type rdf:resource="&DTALabels;SpeechActTypeValue"/>
@@ -2314,7 +2314,7 @@
     
 
 
-    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#QuestionLabel -->
+    <!-- https://github.com/apareja/DTA_Ontologies/blob/master/DTA_Labels_Ontology#QuestionLabel -->
 
     <owl:NamedIndividual rdf:about="&DTALabels;QuestionLabel">
         <rdf:type rdf:resource="&DTALabels;DirectiveLabel"/>
@@ -2324,7 +2324,7 @@
     
 
 
-    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#REL -->
+    <!-- https://github.com/apareja/DTA_Ontologies/blob/master/DTA_Labels_Ontology#REL -->
 
     <owl:NamedIndividual rdf:about="&DTALabels;REL">
         <rdf:type rdf:resource="&DTALabels;RelativePronoun"/>
@@ -2333,7 +2333,7 @@
     
 
 
-    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#REP -->
+    <!-- https://github.com/apareja/DTA_Ontologies/blob/master/DTA_Labels_Ontology#REP -->
 
     <owl:Thing rdf:about="&DTALabels;REP">
         <rdf:type rdf:resource="&owl;NamedIndividual"/>
@@ -2341,7 +2341,7 @@
     
 
 
-    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#REP-OLD -->
+    <!-- https://github.com/apareja/DTA_Ontologies/blob/master/DTA_Labels_Ontology#REP-OLD -->
 
     <owl:NamedIndividual rdf:about="&DTALabels;REP-OLD">
         <rdf:type rdf:resource="&DTALabels;SpeechModeTypeValue"/>
@@ -2351,7 +2351,7 @@
     
 
 
-    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#REQ -->
+    <!-- https://github.com/apareja/DTA_Ontologies/blob/master/DTA_Labels_Ontology#REQ -->
 
     <owl:NamedIndividual rdf:about="&DTALabels;REQ">
         <rdf:type rdf:resource="&DTALabels;SpeechActTypeValue"/>
@@ -2360,7 +2360,7 @@
     
 
 
-    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#RESP -->
+    <!-- https://github.com/apareja/DTA_Ontologies/blob/master/DTA_Labels_Ontology#RESP -->
 
     <owl:Thing rdf:about="&DTALabels;RESP">
         <rdf:type rdf:resource="&owl;NamedIndividual"/>
@@ -2368,7 +2368,7 @@
     
 
 
-    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#RESP-OLD -->
+    <!-- https://github.com/apareja/DTA_Ontologies/blob/master/DTA_Labels_Ontology#RESP-OLD -->
 
     <owl:NamedIndividual rdf:about="&DTALabels;RESP-OLD">
         <rdf:type rdf:resource="&DTALabels;SpeechModeTypeValue"/>
@@ -2378,7 +2378,7 @@
     
 
 
-    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#Repetition-OLD -->
+    <!-- https://github.com/apareja/DTA_Ontologies/blob/master/DTA_Labels_Ontology#Repetition-OLD -->
 
     <owl:NamedIndividual rdf:about="&DTALabels;Repetition-OLD">
         <rdf:type rdf:resource="&DTALabels;RepetitionSpeechModeTypeLabel"/>
@@ -2389,7 +2389,7 @@
     
 
 
-    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#Response-OLD -->
+    <!-- https://github.com/apareja/DTA_Ontologies/blob/master/DTA_Labels_Ontology#Response-OLD -->
 
     <owl:NamedIndividual rdf:about="&DTALabels;Response-OLD">
         <rdf:type rdf:resource="&DTALabels;SpeechModeTypeLabel"/>
@@ -2400,7 +2400,7 @@
     
 
 
-    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#SING -->
+    <!-- https://github.com/apareja/DTA_Ontologies/blob/master/DTA_Labels_Ontology#SING -->
 
     <owl:NamedIndividual rdf:about="&DTALabels;SING">
         <rdf:type rdf:resource="&DTALabels;SpeechActTypeValue"/>
@@ -2409,7 +2409,7 @@
     
 
 
-    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#SLFREP -->
+    <!-- https://github.com/apareja/DTA_Ontologies/blob/master/DTA_Labels_Ontology#SLFREP -->
 
     <owl:NamedIndividual rdf:about="&DTALabels;SLFREP">
         <rdf:type rdf:resource="&DTALabels;SpeechModeTypeValue"/>
@@ -2418,7 +2418,7 @@
     
 
 
-    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#SPONT -->
+    <!-- https://github.com/apareja/DTA_Ontologies/blob/master/DTA_Labels_Ontology#SPONT -->
 
     <owl:NamedIndividual rdf:about="&DTALabels;SPONT">
         <rdf:type rdf:resource="&DTALabels;SpeechModeTypeValue"/>
@@ -2427,7 +2427,7 @@
     
 
 
-    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#Self-repetition -->
+    <!-- https://github.com/apareja/DTA_Ontologies/blob/master/DTA_Labels_Ontology#Self-repetition -->
 
     <owl:NamedIndividual rdf:about="&DTALabels;Self-repetition">
         <rdf:type rdf:resource="&DTALabels;RepetitionSpeechModeTypeLabel"/>
@@ -2438,7 +2438,7 @@
     
 
 
-    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#SingingLabel -->
+    <!-- https://github.com/apareja/DTA_Ontologies/blob/master/DTA_Labels_Ontology#SingingLabel -->
 
     <owl:NamedIndividual rdf:about="&DTALabels;SingingLabel">
         <rdf:type rdf:resource="&DTALabels;SpeechActTypeLabel"/>
@@ -2448,7 +2448,7 @@
     
 
 
-    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#Spontaneous -->
+    <!-- https://github.com/apareja/DTA_Ontologies/blob/master/DTA_Labels_Ontology#Spontaneous -->
 
     <owl:NamedIndividual rdf:about="&DTALabels;Spontaneous">
         <rdf:type rdf:resource="&DTALabels;SpeechModeTypeLabel"/>
@@ -2459,7 +2459,7 @@
     
 
 
-    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#UNCLEARSPEECHMODE -->
+    <!-- https://github.com/apareja/DTA_Ontologies/blob/master/DTA_Labels_Ontology#UNCLEARSPEECHMODE -->
 
     <owl:NamedIndividual rdf:about="&DTALabels;UNCLEARSPEECHMODE">
         <rdf:type rdf:resource="&DTALabels;SpeechModeTypeValue"/>
@@ -2469,7 +2469,7 @@
     
 
 
-    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#UNCLR -->
+    <!-- https://github.com/apareja/DTA_Ontologies/blob/master/DTA_Labels_Ontology#UNCLR -->
 
     <owl:NamedIndividual rdf:about="&DTALabels;UNCLR">
         <rdf:type rdf:resource="&DTALabels;SpeechActTypeValue"/>
@@ -2478,7 +2478,7 @@
     
 
 
-    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#UnclearLabel -->
+    <!-- https://github.com/apareja/DTA_Ontologies/blob/master/DTA_Labels_Ontology#UnclearLabel -->
 
     <owl:NamedIndividual rdf:about="&DTALabels;UnclearLabel">
         <rdf:type rdf:resource="&DTALabels;SpeechActTypeLabel"/>
@@ -2487,7 +2487,7 @@
     
 
 
-    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#UnclearSpeechModeTypeLabel -->
+    <!-- https://github.com/apareja/DTA_Ontologies/blob/master/DTA_Labels_Ontology#UnclearSpeechModeTypeLabel -->
 
     <owl:NamedIndividual rdf:about="&DTALabels;UnclearSpeechModeTypeLabel">
         <rdf:type rdf:resource="&DTALabels;SpeechModeTypeLabel"/>
@@ -2498,7 +2498,7 @@
     
 
 
-    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#WH -->
+    <!-- https://github.com/apareja/DTA_Ontologies/blob/master/DTA_Labels_Ontology#WH -->
 
     <owl:NamedIndividual rdf:about="&DTALabels;WH">
         <rdf:type rdf:resource="&DTALabels;Wh-Word"/>
@@ -2507,7 +2507,7 @@
     
 
 
-    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#WishOrRequestLabel -->
+    <!-- https://github.com/apareja/DTA_Ontologies/blob/master/DTA_Labels_Ontology#WishOrRequestLabel -->
 
     <owl:NamedIndividual rdf:about="&DTALabels;WishOrRequestLabel">
         <rdf:type rdf:resource="&DTALabels;DirectiveLabel"/>
@@ -2517,7 +2517,7 @@
     
 
 
-    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#YNOK -->
+    <!-- https://github.com/apareja/DTA_Ontologies/blob/master/DTA_Labels_Ontology#YNOK -->
 
     <owl:NamedIndividual rdf:about="&DTALabels;YNOK">
         <rdf:type rdf:resource="&DTALabels;SpeechActTypeValue"/>
@@ -2526,7 +2526,7 @@
     
 
 
-    <!-- http://www.clal.cornell.edu/vll/DTA/Ontologies/DTA_Labels_Ontology#YesOrNoOrOKLabel -->
+    <!-- https://github.com/apareja/DTA_Ontologies/blob/master/DTA_Labels_Ontology#YesOrNoOrOKLabel -->
 
     <owl:NamedIndividual rdf:about="&DTALabels;YesOrNoOrOKLabel">
         <rdf:type rdf:resource="&DTALabels;SpeechActTypeLabel"/>
